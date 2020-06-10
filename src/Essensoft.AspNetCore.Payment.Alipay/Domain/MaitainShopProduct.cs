@@ -56,13 +56,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PrivilegeTags { get; set; }
 
         /// <summary>
-        /// 产品描述，ISV对服务项的描述。在门店详情页服务产品名下透出描述。只允许对服务产品本身进行描述，不能透出ISV名称等敏感数据。  新增：必填； 修改：可空
+        /// product描述，ISV对服务项的描述。在门店详情页服务product名下透出描述。只允许对服务product本身进行描述，不能透出ISV名称等敏感数据。  新增：必填； 修改：可空
         /// </summary>
         [JsonPropertyName("product_desc")]
         public string ProductDesc { get; set; }
 
         /// <summary>
-        /// 产品名称，门店详情页展示的服务商品名称。（同一服务项可以配置5座普通洗车、5座SUV洗车）。  新增：必填； 修改：可空
+        /// product名称，门店详情页展示的服务商品名称。（同一服务项可以配置5座普通洗车、5座SUV洗车）。  新增：必填； 修改：可空
         /// </summary>
         [JsonPropertyName("product_name")]
         public string ProductName { get; set; }

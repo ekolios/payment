@@ -27,13 +27,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BillTitle { get; set; }
 
         /// <summary>
-        /// 投保参数 ,每个产品特有的投保参数,如航空险的航班信息;标准json格式
+        /// 投保参数 ,每个product特有的投保参数,如航空险的航班信息;标准json格式
         /// </summary>
         [JsonPropertyName("biz_data")]
         public string BizData { get; set; }
 
         /// <summary>
-        /// 保险产品销售单元编码
+        /// 保险product销售单元编码
         /// </summary>
         [JsonPropertyName("csu_no")]
         public string CsuNo { get; set; }
@@ -45,7 +45,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string EffectStartTime { get; set; }
 
         /// <summary>
-        /// 标的信息， 保险标的物，产品责任信息
+        /// 标的信息， 保险标的物，product责任信息
         /// </summary>
         [JsonPropertyName("ins_objects")]
         public List<InsObject> InsObjects { get; set; }
@@ -75,7 +75,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public long Premium { get; set; }
 
         /// <summary>
-        /// 产品编码;由蚂蚁保险平台分配,商户通过该产品编码投保特定的保险产品（如饿了么外卖延误险）
+        /// product编码;由蚂蚁保险平台分配,商户通过该product编码投保特定的保险product（如饿了么外卖延误险）
         /// </summary>
         [JsonPropertyName("prod_code")]
         public string ProdCode { get; set; }

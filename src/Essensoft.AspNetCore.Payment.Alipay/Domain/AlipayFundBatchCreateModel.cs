@@ -45,7 +45,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public Participant PayerInfo { get; set; }
 
         /// <summary>
-        /// 业务产品码。不同产品值不同，具体值联系支付宝确认。
+        /// 业务product码。不同product值不同，具体值联系支付宝确认。
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

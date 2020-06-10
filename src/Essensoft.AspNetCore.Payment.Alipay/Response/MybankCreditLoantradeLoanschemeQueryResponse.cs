@@ -64,7 +64,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string IntRate { get; set; }
 
         /// <summary>
-        /// 政策产品码(微贷的政策产品码,BC开头)
+        /// 政策product码(微贷的政策product码,BC开头)
         /// </summary>
         [JsonPropertyName("loan_policy_code")]
         public string LoanPolicyCode { get; set; }
@@ -94,7 +94,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public InstallmentValue RepayModeList { get; set; }
 
         /// <summary>
-        /// 金融云产品编码
+        /// 金融云product编码
         /// </summary>
         [JsonPropertyName("sale_pd_code")]
         public string SalePdCode { get; set; }

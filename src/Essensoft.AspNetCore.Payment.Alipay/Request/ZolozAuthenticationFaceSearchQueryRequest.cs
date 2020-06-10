@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class ZolozAuthenticationFaceSearchQueryRequest : IAlipayRequest<ZolozAuthenticationFaceSearchQueryResponse>
     {
         /// <summary>
-        /// 人脸原子产品搜索接口（客户端模式）
+        /// 人脸原子product搜索接口（客户端模式）
         /// </summary>
         public string BizContent { get; set; }
 

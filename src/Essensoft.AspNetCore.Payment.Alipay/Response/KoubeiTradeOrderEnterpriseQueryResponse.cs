@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string OrderNo { get; set; }
 
         /// <summary>
-        /// 订单产品码
+        /// 订单product码
         /// </summary>
         [JsonPropertyName("order_product")]
         public string OrderProduct { get; set; }

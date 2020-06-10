@@ -44,13 +44,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string IpType { get; set; }
 
         /// <summary>
-        /// 产品编码
+        /// product编码
         /// </summary>
         [JsonPropertyName("prod_code")]
         public string ProdCode { get; set; }
 
         /// <summary>
-        /// 产品版本
+        /// product版本
         /// </summary>
         [JsonPropertyName("prod_version")]
         public string ProdVersion { get; set; }

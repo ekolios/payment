@@ -20,13 +20,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string LoType { get; set; }
 
         /// <summary>
-        /// 产品码
+        /// product码
         /// </summary>
         [JsonPropertyName("prod_code")]
         public string ProdCode { get; set; }
 
         /// <summary>
-        /// 产品版本
+        /// product版本
         /// </summary>
         [JsonPropertyName("prod_version")]
         public string ProdVersion { get; set; }

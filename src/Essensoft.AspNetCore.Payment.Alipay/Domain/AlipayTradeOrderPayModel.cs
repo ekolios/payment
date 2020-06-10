@@ -21,7 +21,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public List<BuyerPayDetail> BuyerPayDetail { get; set; }
 
         /// <summary>
-        /// 销售产品码
+        /// 销售product码
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

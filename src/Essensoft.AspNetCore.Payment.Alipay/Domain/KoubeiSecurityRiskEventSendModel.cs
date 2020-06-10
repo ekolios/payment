@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public long GmtOccur { get; set; }
 
         /// <summary>
-        /// 场景关联的产品名称，例如外部商户（EXT_MERCHANT），外部门店（EXT_SHOP）
+        /// 场景关联的product名称，例如外部商户（EXT_MERCHANT），外部门店（EXT_SHOP）
         /// </summary>
         [JsonPropertyName("product")]
         public string Product { get; set; }

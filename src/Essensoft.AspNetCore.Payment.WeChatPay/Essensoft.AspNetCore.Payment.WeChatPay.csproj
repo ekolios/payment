@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;netcoreapp3.1</TargetFrameworks>
     <PackageId>Essensoft.AspNetCore.Payment.WeChatPay</PackageId>
-    <PackageTags>Essensoft;Payment;WeChatPay;微信支付</PackageTags>
+    <PackageTags>Essensoft;Payment;WeChatPay;WeChat Pay</PackageTags>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">

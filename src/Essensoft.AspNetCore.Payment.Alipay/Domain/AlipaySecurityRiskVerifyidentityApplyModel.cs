@@ -44,7 +44,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string SceneCode { get; set; }
 
         /// <summary>
-        /// 待校验的核身产品集合
+        /// 待校验的核身product集合
         /// </summary>
         [JsonPropertyName("validate_product_group")]
         public string ValidateProductGroup { get; set; }

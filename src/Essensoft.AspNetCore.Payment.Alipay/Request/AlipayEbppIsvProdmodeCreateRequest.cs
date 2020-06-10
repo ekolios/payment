@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class AlipayEbppIsvProdmodeCreateRequest : IAlipayRequest<AlipayEbppIsvProdmodeCreateResponse>
     {
         /// <summary>
-        /// 产品模型创建接口
+        /// product模型创建接口
         /// </summary>
         public string BizContent { get; set; }
 

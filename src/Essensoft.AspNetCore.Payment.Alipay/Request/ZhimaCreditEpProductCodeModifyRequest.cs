@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class ZhimaCreditEpProductCodeModifyRequest : IAlipayRequest<ZhimaCreditEpProductCodeModifyResponse>
     {
         /// <summary>
-        /// 芝麻信用企业征信产品推广码下线
+        /// 芝麻信用企业征信product推广码下线
         /// </summary>
         public string BizContent { get; set; }
 

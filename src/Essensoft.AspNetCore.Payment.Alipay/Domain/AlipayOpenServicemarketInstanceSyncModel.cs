@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ExpireDate { get; set; }
 
         /// <summary>
-        /// 金融科技产品码
+        /// 金融科技product码
         /// </summary>
         [JsonPropertyName("fin_tech_product_code")]
         public string FinTechProductCode { get; set; }

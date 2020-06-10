@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class MybankCreditSupplychainArAdmitQueryModel : AlipayObject
     {
         /// <summary>
-        /// 协议产品码
+        /// 协议product码
         /// </summary>
         [JsonPropertyName("ar_pd_code")]
         public string ArPdCode { get; set; }

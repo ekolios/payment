@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ExternalAgreementNo { get; set; }
 
         /// <summary>
-        /// 协议产品码，商户和支付宝签约时确定，商户可咨询技术支持。
+        /// 协议product码，商户和支付宝签约时确定，商户可咨询技术支持。
         /// </summary>
         [JsonPropertyName("personal_product_code")]
         public string PersonalProductCode { get; set; }

@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BizData { get; set; }
 
         /// <summary>
-        /// 此状态需要与产品负责人沟通，每个产品维护了不同的状态机。(如约定产品，在电影场景下，需要淘票票商户在用户购票后同步购票信息，则此code=CONTRACT_STATE_WATCH_MOVIE_BUY)
+        /// 此状态需要与product负责人沟通，每个product维护了不同的状态机。(如约定product，在电影场景下，需要淘票票商户在用户购票后同步购票信息，则此code=CONTRACT_STATE_WATCH_MOVIE_BUY)
         /// </summary>
         [JsonPropertyName("biz_state_code")]
         public string BizStateCode { get; set; }

@@ -62,7 +62,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OutOrderNo { get; set; }
 
         /// <summary>
-        /// 产品码。请填写示例值里提供的值。
+        /// product码。请填写示例值里提供的值。
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

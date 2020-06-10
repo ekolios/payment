@@ -104,7 +104,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string StartDate { get; set; }
 
         /// <summary>
-        /// 产品类型，产品码由中台定义。 对应支付宝开票系统中的 productCode, 默认为DOCK_TAX_OPEN 税控托管产品
+        /// product类型，product码由中台定义。 对应支付宝开票系统中的 productCode, 默认为DOCK_TAX_OPEN 税控托管product
         /// </summary>
         [JsonPropertyName("tax_feature")]
         public string TaxFeature { get; set; }

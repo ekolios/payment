@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ArNo { get; set; }
 
         /// <summary>
-        /// 合约体系： IARCORE - ipay合约中心 MYBKARCORE - 网商产品中心 ARCORE - 主站合约 中心 OTHER - 其他合约中心
+        /// 合约体系： IARCORE - ipay合约中心 MYBKARCORE - 网商product中心 ARCORE - 主站合约 中心 OTHER - 其他合约中心
         /// </summary>
         [JsonPropertyName("ar_source")]
         public string ArSource { get; set; }
@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public long BusinessPeriodOffset { get; set; }
 
         /// <summary>
-        /// 业务扩展类型 当前大量的业务系统采取复用产品码的方案，需要额外的业务识别才能够明确业务
+        /// 业务扩展类型 当前大量的业务系统采取复用product码的方案，需要额外的业务识别才能够明确业务
         /// </summary>
         [JsonPropertyName("business_recognize_ext")]
         public MapParameter BusinessRecognizeExt { get; set; }
@@ -86,13 +86,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PayerAccountType { get; set; }
 
         /// <summary>
-        /// 产品编码
+        /// product编码
         /// </summary>
         [JsonPropertyName("pd_code")]
         public string PdCode { get; set; }
 
         /// <summary>
-        /// 产品体系： IPTCORE -ipay产品中心 MYBKPTCORE - 网商产品中心 PTCORE - 主站产品中心 AFC - 金融云产品中心
+        /// product体系： IPTCORE -ipayproduct中心 MYBKPTCORE - 网商product中心 PTCORE - 主站product中心 AFC - 金融云product中心
         /// </summary>
         [JsonPropertyName("pd_source")]
         public string PdSource { get; set; }

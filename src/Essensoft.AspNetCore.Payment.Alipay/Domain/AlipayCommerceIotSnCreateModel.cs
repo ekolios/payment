@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public long CreateCount { get; set; }
 
         /// <summary>
-        /// 硬件产品标识位 硬件差异的标识，有硬件换料的需求，需要在SN中区分
+        /// 硬件product标识位 硬件差异的标识，有硬件换料的需求，需要在SN中区分
         /// </summary>
         [JsonPropertyName("hardware_product_id")]
         public string HardwareProductId { get; set; }
@@ -38,7 +38,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Pcba { get; set; }
 
         /// <summary>
-        /// 产品系列
+        /// product系列
         /// </summary>
         [JsonPropertyName("product_series")]
         public string ProductSeries { get; set; }

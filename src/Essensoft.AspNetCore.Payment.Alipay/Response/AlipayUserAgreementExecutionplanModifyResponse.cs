@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
     public class AlipayUserAgreementExecutionplanModifyResponse : AlipayResponse
     {
         /// <summary>
-        /// 周期性扣款产品，授权免密支付协议号
+        /// 周期性扣款product，授权免密支付协议号
         /// </summary>
         [JsonPropertyName("agreement_no")]
         public string AgreementNo { get; set; }

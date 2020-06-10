@@ -26,7 +26,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string DeltaSumInsured { get; set; }
 
         /// <summary>
-        /// 赠险产品组类型。 赠险通用产品组 COMMON_GIFT_INSURANCE_PRODUCT_GROUP、 C端赠险产品组 CUSTOMER_GIFT_INSURANCE_PRODUCT_GROUP、 B端赠险产品组 BUSINESS_GIFT_INSURANCE_PRODUCT_GROUP、 相互保赠险产品组 XHB_GIFT_INSURANCE_PRODUCT_GROUP
+        /// 赠险product组类型。 赠险通用product组 COMMON_GIFT_INSURANCE_PRODUCT_GROUP、 C端赠险product组 CUSTOMER_GIFT_INSURANCE_PRODUCT_GROUP、 B端赠险product组 BUSINESS_GIFT_INSURANCE_PRODUCT_GROUP、 相互保赠险product组 XHB_GIFT_INSURANCE_PRODUCT_GROUP
         /// </summary>
         [JsonPropertyName("product_group_biz_type")]
         public string ProductGroupBizType { get; set; }

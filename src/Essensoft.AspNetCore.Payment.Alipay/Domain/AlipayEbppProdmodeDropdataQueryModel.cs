@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BizType { get; set; }
 
         /// <summary>
-        /// 参数包含：业务类型、子业务类型、产品模式等
+        /// 参数包含：业务类型、子业务类型、product模式等
         /// </summary>
         [JsonPropertyName("search_type")]
         public string SearchType { get; set; }

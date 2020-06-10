@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string InstId { get; set; }
 
         /// <summary>
-        /// 产品编码，蚂蚁保险平台会为每个产品分配一个唯一的产品编码
+        /// product编码，蚂蚁保险平台会为每个product分配一个唯一的product编码
         /// </summary>
         [JsonPropertyName("prod_code")]
         public string ProdCode { get; set; }

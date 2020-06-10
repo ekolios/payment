@@ -92,7 +92,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string NetworkType { get; set; }
 
         /// <summary>
-        /// 发送心跳的设备所依赖的支付宝产品（如 点餐的为 CO）
+        /// 发送心跳的设备所依赖的支付宝product（如 点餐的为 CO）
         /// </summary>
         [JsonPropertyName("product")]
         public string Product { get; set; }

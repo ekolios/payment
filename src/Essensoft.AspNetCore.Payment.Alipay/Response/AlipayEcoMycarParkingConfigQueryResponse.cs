@@ -21,7 +21,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public InterfaceInfoList InterfaceInfoList { get; set; }
 
         /// <summary>
-        /// 商户在停车平台首页露出的LOGO链接地址，开发者通过ISV系统配置信息注册接口(alipay.eco.mycar.parking.config.set)调用自动生成该链接
+        /// 商户在停车平台Home露出的LOGO链接地址，开发者通过ISV系统配置信息注册接口(alipay.eco.mycar.parking.config.set)调用自动生成该链接
         /// </summary>
         [JsonPropertyName("merchant_logo")]
         public string MerchantLogo { get; set; }

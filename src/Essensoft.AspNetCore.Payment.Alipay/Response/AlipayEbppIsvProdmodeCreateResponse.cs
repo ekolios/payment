@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string ProcessId { get; set; }
 
         /// <summary>
-        /// 创建产品模型成功后返回任务ID
+        /// 创建product模型成功后返回任务ID
         /// </summary>
         [JsonPropertyName("task_id")]
         public string TaskId { get; set; }

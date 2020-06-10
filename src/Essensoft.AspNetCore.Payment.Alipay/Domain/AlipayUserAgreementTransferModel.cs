@@ -14,13 +14,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string AgreementNo { get; set; }
 
         /// <summary>
-        /// 周期管控规则参数period_rule_params，在签约周期扣款产品（如CYCLE_PAY_AUTH_P）时必传。 周期扣款产品，会按照这里传入的参数提示用户，并对发起扣款的时间、金额、次数等做相应限制。
+        /// 周期管控规则参数period_rule_params，在签约周期扣款product（如CYCLE_PAY_AUTH_P）时必传。 周期扣款product，会按照这里传入的参数提示用户，并对发起扣款的时间、金额、次数等做相应限制。
         /// </summary>
         [JsonPropertyName("period_rule_params")]
         public PeriodRuleParams PeriodRuleParams { get; set; }
 
         /// <summary>
-        /// 协议产品码，商户和支付宝签约时确定，不同业务场景对应不同的签约产品码。这里指的是需要修改目标产品码的值
+        /// 协议product码，商户和支付宝签约时确定，不同业务场景对应不同的签约product码。这里指的是需要修改目标product码的值
         /// </summary>
         [JsonPropertyName("target_product_code")]
         public string TargetProductCode { get; set; }

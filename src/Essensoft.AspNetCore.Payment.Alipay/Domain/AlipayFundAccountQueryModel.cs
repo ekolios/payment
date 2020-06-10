@@ -8,13 +8,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class AlipayFundAccountQueryModel : AlipayObject
     {
         /// <summary>
-        /// 开户产品码。如果查询托管子户余额，必传且必须传入与开户时传入的值一致。
+        /// 开户product码。如果查询托管子户余额，必传且必须传入与开户时传入的值一致。
         /// </summary>
         [JsonPropertyName("account_product_code")]
         public string AccountProductCode { get; set; }
 
         /// <summary>
-        /// 开户场景码，与开户产品码不可同时传递。
+        /// 开户场景码，与开户product码不可同时传递。
         /// </summary>
         [JsonPropertyName("account_scene_code")]
         public string AccountSceneCode { get; set; }

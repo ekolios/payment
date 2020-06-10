@@ -1,10 +1,10 @@
 ﻿@model WeChatPayRefundViewModel
 @{
-    ViewData["Title"] = "申请退款";
+    ViewData["Title"] = "Request a refund";
 }
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a asp-controller="WeChatPay" asp-action="Index">微信支付</a></li>
+        <li class="breadcrumb-item"><a asp-controller="WeChatPay" asp-action="Index">WeChat Pay</a></li>
         <li class="breadcrumb-item active" aria-current="page">@ViewData["Title"]</li>
     </ol>
 </nav>
@@ -41,7 +41,7 @@
                 <label asp-for="NotifyUrl"></label>
                 <input type="text" class="form-control" asp-for="NotifyUrl" value="http://*/notify/wechatpay/refund">
             </div>
-            <button type="submit" class="btn btn-primary">提交请求</button>
+            <button type="submit" class="btn btn-primary">Submit a request</button>
         </form>
         <hr />
         <form class="form-horizontal">

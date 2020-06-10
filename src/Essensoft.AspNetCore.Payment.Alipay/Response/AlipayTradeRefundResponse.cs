@@ -100,7 +100,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string RefundSettlementId { get; set; }
 
         /// <summary>
-        /// 本次商户实际退回金额  注：在签约收单产品时需勾选“返回资金明细”才会返回
+        /// 本次商户实际退回金额  注：在签约收单product时需勾选“返回资金明细”才会返回
         /// </summary>
         [JsonPropertyName("send_back_fee")]
         public string SendBackFee { get; set; }

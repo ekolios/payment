@@ -20,7 +20,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 微信支付指引页
+        /// WeChat Pay guide page
         /// </summary>
         public IActionResult Index()
         {
@@ -28,7 +28,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 刷卡支付
+        /// Credit card payment
         /// </summary>
         [HttpGet]
         public IActionResult MicroPay()
@@ -37,7 +37,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 刷卡支付
+        /// Credit card payment
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -57,7 +57,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 公众号支付
+        /// Public account payment
         /// </summary>
         [HttpGet]
         public IActionResult PubPay()
@@ -66,7 +66,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 公众号支付
+        /// Public account payment
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -93,7 +93,8 @@ namespace WebApplicationSample.Controllers
 
                 var parameter = await _client.ExecuteAsync(req, _optionsAccessor.Value);
 
-                // 将参数(parameter)给 公众号前端 让他在微信内H5调起支付(https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=7_7&index=6)
+                // Give the parameter (parameter) to the front end of the public account and
+                // let him transfer the payment in H5 in WeChat(https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=7_7&index=6)
                 ViewData["parameter"] = JsonSerializer.Serialize(parameter);
                 ViewData["response"] = response.Body;
                 return View();
@@ -104,7 +105,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 扫码支付
+        /// Scan code to pay
         /// </summary>
         [HttpGet]
         public IActionResult QrCodePay()
@@ -113,7 +114,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 扫码支付
+        /// Scan code to pay
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -131,14 +132,14 @@ namespace WebApplicationSample.Controllers
 
             var response = await _client.ExecuteAsync(request, _optionsAccessor.Value);
 
-            // response.CodeUrl 给前端生成二维码
+            // response.CodeUrl generates a QR code for the front end
             ViewData["qrcode"] = response.CodeUrl;
             ViewData["response"] = response.Body;
             return View();
         }
 
         /// <summary>
-        /// APP支付
+        /// APP payment
         /// </summary>
         [HttpGet]
         public IActionResult AppPay()
@@ -147,7 +148,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// APP支付
+        /// APP payment
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -173,7 +174,8 @@ namespace WebApplicationSample.Controllers
 
                 var parameter = await _client.ExecuteAsync(req, _optionsAccessor.Value);
 
-                // 将参数(parameter)给 ios/android端 让他调起微信APP(https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=8_5)
+                // Give the parameter (parameter) to the ios / android side and let him call up the WeChat APP
+                // (https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=8_5)
                 ViewData["parameter"] = JsonSerializer.Serialize(parameter);
                 ViewData["response"] = response.Body;
                 return View();
@@ -184,7 +186,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// H5支付
+        /// H5 payment
         /// </summary>
         [HttpGet]
         public IActionResult H5Pay()
@@ -193,7 +195,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// H5支付
+        /// H5 payment
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -211,12 +213,13 @@ namespace WebApplicationSample.Controllers
 
             var response = await _client.ExecuteAsync(request, _optionsAccessor.Value);
 
-            // mweb_url为拉起微信支付收银台的中间页面，可通过访问该url来拉起微信客户端，完成支付,mweb_url的有效期为5分钟。
+            // mweb_url is the middle page of the WeChat Pay cash register. 
+            // You can access the url to pull up the WeChat client to complete the payment. mweb_url is valid for 5 minutes.
             return Redirect(response.MwebUrl);
         }
 
         /// <summary>
-        /// 小程序支付
+        /// Applet payment
         /// </summary>
         [HttpGet]
         public IActionResult LiteAppPay()
@@ -225,7 +228,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 小程序支付
+        /// Applet payment
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -252,7 +255,8 @@ namespace WebApplicationSample.Controllers
 
                 var parameter = await _client.ExecuteAsync(req, _optionsAccessor.Value);
 
-                // 将参数(parameter)给 小程序前端 让他调起支付API(https://pay.weixin.qq.com/wiki/doc/api/wxa/wxa_api.php?chapter=7_7&index=5)
+                // Give the parameter to the front end of the applet and let him call up the payment API
+                // (https://pay.weixin.qq.com/wiki/doc/api/wxa/wxa_api.php?chapter=7_7&index=5)
                 ViewData["parameter"] = JsonSerializer.Serialize(parameter);
                 ViewData["response"] = response.Body;
                 return View();
@@ -263,7 +267,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 查询订单
+        /// checking order
         /// </summary>
         [HttpGet]
         public IActionResult OrderQuery()
@@ -272,7 +276,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 查询订单
+        /// checking order
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -289,7 +293,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 撤销订单
+        /// Cancel the order
         /// </summary>
         [HttpGet]
         public IActionResult Reverse()
@@ -298,7 +302,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 撤销订单
+        /// Cancel the order
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -315,7 +319,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 关闭订单
+        /// Close order
         /// </summary>
         [HttpGet]
         public IActionResult CloseOrder()
@@ -324,7 +328,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 关闭订单
+        /// Close order
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -340,7 +344,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 申请退款
+        /// Request a refund
         /// </summary>
         [HttpGet]
         public IActionResult Refund()
@@ -349,7 +353,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 申请退款
+        /// Request a refund
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -371,7 +375,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 查询退款
+        /// Check refund
         /// </summary>
         [HttpGet]
         public IActionResult RefundQuery()
@@ -380,7 +384,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 查询退款
+        /// Check refund
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -399,7 +403,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 下载对账单
+        /// Download statement
         /// </summary>
         [HttpGet]
         public IActionResult DownloadBill()
@@ -408,7 +412,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 下载对账单
+        /// Download statement
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -426,7 +430,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 下载资金账单
+        /// Download fund flow
         /// </summary>
         [HttpGet]
         public IActionResult DownloadFundFlow()
@@ -435,7 +439,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 下载资金账单
+        /// Download fund flow
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -453,7 +457,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 企业付款到零钱
+        /// Enterprise payment to change
         /// </summary>
         [HttpGet]
         public IActionResult Transfers()
@@ -462,7 +466,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 企业付款到零钱
+        /// Enterprise payment to change
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -484,7 +488,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 查询企业付款
+        /// Inquiry of corporate payment
         /// </summary>
         [HttpGet]
         public IActionResult GetTransferInfo()
@@ -493,7 +497,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 查询企业付款
+        /// Inquiry of corporate payment
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -509,7 +513,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 企业付款到银行卡
+        /// Corporate payment to bank card
         /// </summary>
         [HttpGet]
         public IActionResult PayBank()
@@ -518,7 +522,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 企业付款到银行卡
+        /// Corporate payment to bank card
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -539,7 +543,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 查询企业付款银行卡
+        /// Inquiry of corporate payment bank card
         /// </summary>
         [HttpGet]
         public IActionResult QueryBank()
@@ -548,7 +552,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 查询企业付款银行卡
+        /// Inquiry of corporate payment bank card
         /// </summary>
         /// <param name="viewModel"></param>
         [HttpPost]
@@ -564,7 +568,7 @@ namespace WebApplicationSample.Controllers
         }
 
         /// <summary>
-        /// 获取RSA加密公钥
+        /// Obtain RSA encrypted public key
         /// </summary>
         [HttpGet]
         [HttpPost]

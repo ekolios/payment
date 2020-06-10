@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Orgcode { get; set; }
 
         /// <summary>
-        /// 产品编码，汽车金融平台给机构提供的产品编码
+        /// product编码，汽车金融平台给机构提供的product编码
         /// </summary>
         [JsonPropertyName("productcode")]
         public string Productcode { get; set; }

@@ -141,13 +141,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public bool NeedSignContract { get; set; }
 
         /// <summary>
-        /// 客户签约的销售产品编码，由网商银行事先分配给外部机构
+        /// 客户签约的销售product编码，由网商银行事先分配给外部机构
         /// </summary>
         [JsonPropertyName("pd_code")]
         public string PdCode { get; set; }
 
         /// <summary>
-        /// 客户签约的销售产品版本号，通过调用完整贷款方案（mybank.credit.loantrade.loanscheme.full.query）查询接口获取
+        /// 客户签约的销售product版本号，通过调用完整贷款方案（mybank.credit.loantrade.loanscheme.full.query）查询接口获取
         /// </summary>
         [JsonPropertyName("pd_version")]
         public string PdVersion { get; set; }

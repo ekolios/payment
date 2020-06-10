@@ -15,13 +15,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string ActionUrl { get; set; }
 
         /// <summary>
-        /// 促销结束时间，用于产品详情展示，格式为：2017-02-07 11:11:11。
+        /// 促销结束时间，用于product详情展示，格式为：2017-02-07 11:11:11。
         /// </summary>
         [JsonPropertyName("activity_end_time")]
         public string ActivityEndTime { get; set; }
 
         /// <summary>
-        /// 促销开始时间，在产品详情中展示，格式为：2017-02-01 11:11:11。
+        /// 促销开始时间，在product详情中展示，格式为：2017-02-01 11:11:11。
         /// </summary>
         [JsonPropertyName("activity_start_time")]
         public string ActivityStartTime { get; set; }
@@ -111,7 +111,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string Status { get; set; }
 
         /// <summary>
-        /// 4:3缩略图url，用于产品在店铺页简单规范的展示。
+        /// 4:3缩略图url，用于product在店铺页简单规范的展示。
         /// </summary>
         [JsonPropertyName("thumbnail_image_id")]
         public string ThumbnailImageId { get; set; }

@@ -207,13 +207,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string PayStatus { get; set; }
 
         /// <summary>
-        /// 产品码
+        /// product码
         /// </summary>
         [JsonPropertyName("pd_code")]
         public string PdCode { get; set; }
 
         /// <summary>
-        /// 产品名称
+        /// product名称
         /// </summary>
         [JsonPropertyName("pd_name")]
         public string PdName { get; set; }

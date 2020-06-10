@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class AlipayInsCooperationProductQrcodeApplyRequest : IAlipayRequest<AlipayInsCooperationProductQrcodeApplyResponse>
     {
         /// <summary>
-        /// （快捷投保）生成产品二维码
+        /// （快捷投保）生成product二维码
         /// </summary>
         public string BizContent { get; set; }
 

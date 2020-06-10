@@ -188,7 +188,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string SpOffer { get; set; }
 
         /// <summary>
-        /// 报价中心内部标准产品编码
+        /// 报价中心内部标准product编码
         /// </summary>
         [JsonPropertyName("standard_product_rate_id")]
         public string StandardProductRateId { get; set; }

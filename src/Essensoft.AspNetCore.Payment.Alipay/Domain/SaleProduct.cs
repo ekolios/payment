@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ChannelType { get; set; }
 
         /// <summary>
-        /// 销售产品DB ID
+        /// 销售productDB ID
         /// </summary>
         [JsonPropertyName("id")]
         public string Id { get; set; }
@@ -26,7 +26,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string MarketPrice { get; set; }
 
         /// <summary>
-        /// 充值产品提供商
+        /// 充值product提供商
         /// </summary>
         [JsonPropertyName("product_provider")]
         public ProductProvider ProductProvider { get; set; }
@@ -38,7 +38,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string SalePrice { get; set; }
 
         /// <summary>
-        /// 产品状态, 0为不可用，1为可用
+        /// product状态, 0为不可用，1为可用
         /// </summary>
         [JsonPropertyName("status")]
         public string Status { get; set; }

@@ -27,7 +27,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Mid { get; set; }
 
         /// <summary>
-        /// 对应送礼平台skuId，库存导入必须指定唯一的一个SKUID，该id需要送礼平台方先创建相应产品后，在通知使用方
+        /// 对应送礼平台skuId，库存导入必须指定唯一的一个SKUID，该id需要送礼平台方先创建相应product后，在通知使用方
         /// </summary>
         [JsonPropertyName("sku_id")]
         public string SkuId { get; set; }

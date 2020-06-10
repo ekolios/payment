@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class AlipayUserAgreementTransferRequest : IAlipayRequest<AlipayUserAgreementTransferResponse>
     {
         /// <summary>
-        /// 协议由普通通用代扣协议产品转移到周期扣协议产品
+        /// 协议由普通通用代扣协议product转移到周期扣协议product
         /// </summary>
         public string BizContent { get; set; }
 

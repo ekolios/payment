@@ -74,7 +74,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string GoodsName { get; set; }
 
         /// <summary>
-        /// 商品原价。 当voucher_type为有资金单品折扣券（ITEM_BALANCE_DISCOUNT_VOUCHER）和有资金单品特价券（ITEM_BALANCE_SPE_VOUCHER）时必选，有资金单品代金券类型（ITEM_BALANCE_FIX_VOUCHER）下此值必须为空。用于计算最大优惠价格（最大优惠价格的计算方式请参考产品说明文档）。
+        /// 商品原价。 当voucher_type为有资金单品折扣券（ITEM_BALANCE_DISCOUNT_VOUCHER）和有资金单品特价券（ITEM_BALANCE_SPE_VOUCHER）时必选，有资金单品代金券类型（ITEM_BALANCE_FIX_VOUCHER）下此值必须为空。用于计算最大优惠价格（最大优惠价格的计算方式请参考product说明文档）。
         /// </summary>
         [JsonPropertyName("goods_origin_price")]
         public string GoodsOriginPrice { get; set; }

@@ -68,7 +68,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string RedirectUri { get; set; }
 
         /// <summary>
-        /// 规则配置，JSON字符串，格式为K-V模式，当同一个KEY下规则为多个值时，用英文逗号进行分隔。目前支持的规则KEY有：核销商户ID(PID),核销内部门店ID(STORE),指定收款账户(payeeUserId),子产品交易码(bizProduct),缴费机构/类型(CUSTOMBUSINESS),缴费户号(EBPPUSERNUM)。一旦商户设置了规则，当前券实例必须满足指定规则才能进行核销。了解更多规则相关具体属性，请联系技术支持。
+        /// 规则配置，JSON字符串，格式为K-V模式，当同一个KEY下规则为多个值时，用英文逗号进行分隔。目前支持的规则KEY有：核销商户ID(PID),核销内部门店ID(STORE),指定收款账户(payeeUserId),子product交易码(bizProduct),缴费机构/类型(CUSTOMBUSINESS),缴费户号(EBPPUSERNUM)。一旦商户设置了规则，当前券实例必须满足指定规则才能进行核销。了解更多规则相关具体属性，请联系技术支持。
         /// </summary>
         [JsonPropertyName("rule_conf")]
         public string RuleConf { get; set; }

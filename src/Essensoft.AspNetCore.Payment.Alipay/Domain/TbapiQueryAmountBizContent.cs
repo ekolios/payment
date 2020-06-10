@@ -9,13 +9,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class TbapiQueryAmountBizContent : AlipayObject
     {
         /// <summary>
-        /// 查询指定额度产品组
+        /// 查询指定额度product组
         /// </summary>
         [JsonPropertyName("amt_group")]
         public string AmtGroup { get; set; }
 
         /// <summary>
-        /// 查询指定额度产品码
+        /// 查询指定额度product码
         /// </summary>
         [JsonPropertyName("amt_prods")]
         public List<string> AmtProds { get; set; }

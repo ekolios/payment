@@ -80,7 +80,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public MultiCurrencyMoneyOpenApi FbdPayAmt { get; set; }
 
         /// <summary>
-        /// 止付类型（通常为空）{"01":"客户级别止付","02":"用户级别止付","03":"账单级别止付","04":"用户产品级别止付","05":"客户产品级别止付","99":"未止付"}
+        /// 止付类型（通常为空）{"01":"客户级别止付","02":"用户级别止付","03":"账单级别止付","04":"用户product级别止付","05":"客户product级别止付","99":"未止付"}
         /// </summary>
         [JsonPropertyName("fbd_pay_type")]
         public string FbdPayType { get; set; }
@@ -134,13 +134,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PayStatus { get; set; }
 
         /// <summary>
-        /// 产品码
+        /// product码
         /// </summary>
         [JsonPropertyName("pd_code")]
         public string PdCode { get; set; }
 
         /// <summary>
-        /// 产品名称
+        /// product名称
         /// </summary>
         [JsonPropertyName("pd_name")]
         public string PdName { get; set; }

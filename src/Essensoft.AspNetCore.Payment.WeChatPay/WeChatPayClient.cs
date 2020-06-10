@@ -48,7 +48,7 @@ namespace Essensoft.AspNetCore.Payment.WeChatPay
             {
                 throw new ArgumentNullException(nameof(options.Key));
             }
-
+            
             var signType = request.GetSignType();
             var sortedTxtParams = new WeChatPayDictionary(request.GetParameters());
 

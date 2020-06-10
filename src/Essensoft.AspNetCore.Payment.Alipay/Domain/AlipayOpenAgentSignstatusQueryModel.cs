@@ -15,7 +15,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Pid { get; set; }
 
         /// <summary>
-        /// isv要查询商户签约状态的产品码，产品码是支付宝内部对产品的唯一标识
+        /// isv要查询商户签约状态的product码，product码是支付宝内部对product的唯一标识
         /// </summary>
         [JsonPropertyName("product_codes")]
         public List<string> ProductCodes { get; set; }

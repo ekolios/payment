@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OperateType { get; set; }
 
         /// <summary>
-        /// 产品类型，如 online_car:网约车 card50:50元储值卡
+        /// product类型，如 online_car:网约车 card50:50元储值卡
         /// </summary>
         [JsonPropertyName("product_type")]
         public string ProductType { get; set; }

@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string EffectStartTime { get; set; }
 
         /// <summary>
-        /// 产品机构产品码
+        /// product机构product码
         /// </summary>
         [JsonPropertyName("item_id")]
         public string ItemId { get; set; }
@@ -56,7 +56,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string SignUserType { get; set; }
 
         /// <summary>
-        /// 产品状态，见状态枚举
+        /// product状态，见状态枚举
         /// </summary>
         [JsonPropertyName("status")]
         public long Status { get; set; }

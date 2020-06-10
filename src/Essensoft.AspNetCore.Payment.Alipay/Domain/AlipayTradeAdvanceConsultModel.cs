@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string EstimatedOrderAmount { get; set; }
 
         /// <summary>
-        /// 行业产品信息，咨询是，会从该产品对应的销售方案中获取相关垫资规则配置
+        /// 行业product信息，咨询是，会从该product对应的销售方案中获取相关垫资规则配置
         /// </summary>
         [JsonPropertyName("industry_product_code")]
         public string IndustryProductCode { get; set; }

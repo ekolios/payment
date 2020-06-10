@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class AlipayInsAutoAutoinsprodQuoteApplyModel : AlipayObject
     {
         /// <summary>
-        /// 商业险产品信息
+        /// 商业险product信息
         /// </summary>
         [JsonPropertyName("business_product")]
         public InsProduct BusinessProduct { get; set; }
@@ -51,7 +51,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string EnquiryBizId { get; set; }
 
         /// <summary>
-        /// 交强险产品信息
+        /// 交强险product信息
         /// </summary>
         [JsonPropertyName("force_product")]
         public InsProduct ForceProduct { get; set; }

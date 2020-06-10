@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string OrderStatus { get; set; }
 
         /// <summary>
-        /// 产品数量
+        /// product数量
         /// </summary>
         [JsonPropertyName("quantity")]
         public string Quantity { get; set; }
@@ -38,7 +38,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string SenderId { get; set; }
 
         /// <summary>
-        /// 对应送礼平台的sku_id，可用于找到送礼平台对应配置的产品，库存等信息。
+        /// 对应送礼平台的sku_id，可用于找到送礼平台对应配置的product，库存等信息。
         /// </summary>
         [JsonPropertyName("sku_id")]
         public string SkuId { get; set; }

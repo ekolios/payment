@@ -69,7 +69,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PaymentCurrency { get; set; }
 
         /// <summary>
-        /// 批量代发产品签约产品码。
+        /// 批量代发product签约product码。
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }
@@ -81,7 +81,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string RequestValueTime { get; set; }
 
         /// <summary>
-        /// 签约主体，即签约了批量代发产品的支付宝账号。
+        /// 签约主体，即签约了批量代发product的支付宝账号。
         /// </summary>
         [JsonPropertyName("sign_principal")]
         public string SignPrincipal { get; set; }

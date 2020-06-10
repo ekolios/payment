@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class AlipayOpenAgentSignstatusQueryRequest : IAlipayRequest<AlipayOpenAgentSignstatusQueryResponse>
     {
         /// <summary>
-        /// isv查询商户某个产品的签约状态
+        /// isv查询商户某个product的签约状态
         /// </summary>
         public string BizContent { get; set; }
 

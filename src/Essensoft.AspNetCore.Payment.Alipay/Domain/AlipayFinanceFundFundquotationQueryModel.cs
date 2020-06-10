@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class AlipayFinanceFundFundquotationQueryModel : AlipayObject
     {
         /// <summary>
-        /// 基金编号：基金产品编号
+        /// 基金编号：基金product编号
         /// </summary>
         [JsonPropertyName("fund_code")]
         public string FundCode { get; set; }

@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string MiniAppId { get; set; }
 
         /// <summary>
-        /// 指定小程序页面，不填则默认跳转至对应小程序首页
+        /// 指定小程序页面，不填则默认跳转至对应小程序Home
         /// </summary>
         [JsonPropertyName("mini_page_param")]
         public string MiniPageParam { get; set; }

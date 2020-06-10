@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Areacode { get; set; }
 
         /// <summary>
-        /// 人脸产品能力
+        /// 人脸product能力
         /// </summary>
         [JsonPropertyName("biz_type")]
         public string BizType { get; set; }

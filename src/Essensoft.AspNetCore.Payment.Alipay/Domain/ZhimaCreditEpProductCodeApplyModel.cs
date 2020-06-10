@@ -26,7 +26,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OrgBizNo { get; set; }
 
         /// <summary>
-        /// 聚沙塔定义的产品列表，对接前需要芝麻同学业务同步给商户，列表按逗号分隔，比如同时签约浦发银行和南京银行产品，传入:101_1001_spdb,101_1001_njcb
+        /// 聚沙塔定义的product列表，对接前需要芝麻同学业务同步给商户，列表按逗号分隔，比如同时签约浦发银行和南京银行product，传入:101_1001_spdb,101_1001_njcb
         /// </summary>
         [JsonPropertyName("product_list")]
         public string ProductList { get; set; }

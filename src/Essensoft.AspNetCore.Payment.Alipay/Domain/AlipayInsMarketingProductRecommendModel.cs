@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public InsObject InsObject { get; set; }
 
         /// <summary>
-        /// 场景编码；识别商户在特定场景下需要的保险产品
+        /// 场景编码；识别商户在特定场景下需要的保险product
         /// </summary>
         [JsonPropertyName("scene_code")]
         public string SceneCode { get; set; }

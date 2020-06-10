@@ -27,7 +27,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public InsQueryPerson Person { get; set; }
 
         /// <summary>
-        /// 查询的保单对于的产品列表。查询返回的结果是这几个产品下的保单,格式为:  [产品码1,产品码2,...]
+        /// 查询的保单对于的product列表。查询返回的结果是这几个product下的保单,格式为:  [product码1,product码2,...]
         /// </summary>
         [JsonPropertyName("product_list")]
         public List<string> ProductList { get; set; }

@@ -99,19 +99,19 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OutBizNo { get; set; }
 
         /// <summary>
-        /// 业务产品码
+        /// 业务product码
         /// </summary>
         [JsonPropertyName("pd_code")]
         public string PdCode { get; set; }
 
         /// <summary>
-        /// 产品事件码
+        /// product事件码
         /// </summary>
         [JsonPropertyName("pd_event_code")]
         public string PdEventCode { get; set; }
 
         /// <summary>
-        /// 产品体系来源
+        /// product体系来源
         /// </summary>
         [JsonPropertyName("pd_source")]
         public string PdSource { get; set; }

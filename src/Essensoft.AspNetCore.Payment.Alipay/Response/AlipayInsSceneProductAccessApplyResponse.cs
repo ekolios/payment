@@ -9,13 +9,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
     public class AlipayInsSceneProductAccessApplyResponse : AlipayResponse
     {
         /// <summary>
-        /// true 表示可以准入， false表示不可以准入。  当准入结果为false的时候需要提示用户当前不能购买该产品
+        /// true 表示可以准入， false表示不可以准入。  当准入结果为false的时候需要提示用户当前不能购买该product
         /// </summary>
         [JsonPropertyName("is_access")]
         public bool IsAccess { get; set; }
 
         /// <summary>
-        /// 产品信息(保险标准查询信息)
+        /// product信息(保险标准查询信息)
         /// </summary>
         [JsonPropertyName("product")]
         public InsProduct Product { get; set; }

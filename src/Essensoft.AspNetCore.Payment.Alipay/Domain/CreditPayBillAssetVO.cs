@@ -39,7 +39,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BillAccountDayUnit { get; set; }
 
         /// <summary>
-        /// 账单产品码
+        /// 账单product码
         /// </summary>
         [JsonPropertyName("bill_pd_code")]
         public string BillPdCode { get; set; }
@@ -75,7 +75,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public CreditPayRepayVO RepayInfo { get; set; }
 
         /// <summary>
-        /// 期限信息，账单产品可能不存在期限信息
+        /// 期限信息，账单product可能不存在期限信息
         /// </summary>
         [JsonPropertyName("term_info")]
         public CreditPayTermVO TermInfo { get; set; }

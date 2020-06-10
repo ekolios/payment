@@ -15,7 +15,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string AccountModel { get; set; }
 
         /// <summary>
-        /// 按照资金产品维度定义的资产类型
+        /// 按照资金product维度定义的资产类型
         /// </summary>
         [JsonPropertyName("assets_code")]
         public string AssetsCode { get; set; }
@@ -87,7 +87,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PeriodType { get; set; }
 
         /// <summary>
-        /// 按照业务资产维度定义的产品编码
+        /// 按照业务资产维度定义的product编码
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

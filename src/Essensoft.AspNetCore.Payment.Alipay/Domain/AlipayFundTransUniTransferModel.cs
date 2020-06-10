@@ -62,7 +62,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public Participant PayerInfo { get; set; }
 
         /// <summary>
-        /// 业务产品码， 收发现金红包固定为：STD_RED_PACKET； 单笔无密转账到支付宝账户固定为：TRANS_ACCOUNT_NO_PWD； 单笔无密转账到银行卡固定为：TRANS_BANKCARD_NO_PWD
+        /// 业务product码， 收发现金红包固定为：STD_RED_PACKET； 单笔无密转账到支付宝账户固定为：TRANS_ACCOUNT_NO_PWD； 单笔无密转账到银行卡固定为：TRANS_BANKCARD_NO_PWD
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }
@@ -74,7 +74,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Remark { get; set; }
 
         /// <summary>
-        /// 订单总金额，单位为元，精确到小数点后两位，STD_RED_PACKET产品取值范围[0.01,100000000]； TRANS_ACCOUNT_NO_PWD产品取值范围[0.1,100000000]
+        /// 订单总金额，单位为元，精确到小数点后两位，STD_RED_PACKETproduct取值范围[0.01,100000000]； TRANS_ACCOUNT_NO_PWDproduct取值范围[0.1,100000000]
         /// </summary>
         [JsonPropertyName("trans_amount")]
         public string TransAmount { get; set; }

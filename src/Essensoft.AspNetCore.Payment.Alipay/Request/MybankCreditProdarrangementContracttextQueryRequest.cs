@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class MybankCreditProdarrangementContracttextQueryRequest : IAlipayRequest<MybankCreditProdarrangementContracttextQueryResponse>
     {
         /// <summary>
-        /// 根据产品合约编号查询合同内容
+        /// 根据product合约编号查询合同内容
         /// </summary>
         public string BizContent { get; set; }
 

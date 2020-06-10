@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class ZolozAuthenticationFaceInitializeRequest : IAlipayRequest<ZolozAuthenticationFaceInitializeResponse>
     {
         /// <summary>
-        /// 人脸原子产品初始化接口
+        /// 人脸原子product初始化接口
         /// </summary>
         public string BizContent { get; set; }
 

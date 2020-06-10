@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string TemplateId { get; set; }
 
         /// <summary>
-        /// 支付宝用户ID,可以通过获取会员信息产品 获取支付宝用户ID  当data_type为CALLBACK时必填
+        /// 支付宝用户ID,可以通过获取会员信息product 获取支付宝用户ID  当data_type为CALLBACK时必填
         /// </summary>
         [JsonPropertyName("user_id")]
         public string UserId { get; set; }

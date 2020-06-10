@@ -56,7 +56,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PayPasswd { get; set; }
 
         /// <summary>
-        /// 销售产品码，商家和支付宝签约的产品码
+        /// 销售product码，商家和支付宝签约的product码
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

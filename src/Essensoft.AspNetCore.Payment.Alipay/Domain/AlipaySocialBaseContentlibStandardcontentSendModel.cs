@@ -44,7 +44,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string SourceContent { get; set; }
 
         /// <summary>
-        /// source_cover值为图片链接，用于主页的封面图显示，图片尺寸900*500。无封面图情况需产品确认。选填
+        /// source_cover值为图片链接，用于主页的封面图显示，图片尺寸900*500。无封面图情况需product确认。选填
         /// </summary>
         [JsonPropertyName("source_cover")]
         public string SourceCover { get; set; }

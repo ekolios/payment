@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class AlipayInsSceneProductAgreementCancelRequest : IAlipayRequest<AlipayInsSceneProductAgreementCancelResponse>
     {
         /// <summary>
-        /// 商户产品协议解约
+        /// 商户product协议解约
         /// </summary>
         public string BizContent { get; set; }
 

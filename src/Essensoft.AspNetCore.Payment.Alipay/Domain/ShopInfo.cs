@@ -15,7 +15,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ShopName { get; set; }
 
         /// <summary>
-        /// 店铺内景图片，如要签约当面付产品，需上传3张店铺内景图片
+        /// 店铺内景图片，如要签约当面付product，需上传3张店铺内景图片
         /// </summary>
         [JsonPropertyName("shop_scene_pic")]
         public List<string> ShopScenePic { get; set; }

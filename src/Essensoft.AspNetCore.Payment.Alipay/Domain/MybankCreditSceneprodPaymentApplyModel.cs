@@ -15,7 +15,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Amount { get; set; }
 
         /// <summary>
-        /// 业务产品编码，64个字符以内
+        /// 业务product编码，64个字符以内
         /// </summary>
         [JsonPropertyName("biz_product_code")]
         public string BizProductCode { get; set; }
@@ -87,7 +87,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public List<SceneProdPaymentAccountInfo> PayerAccountList { get; set; }
 
         /// <summary>
-        /// 代收付产品编码，64个字符以内
+        /// 代收付product编码，64个字符以内
         /// </summary>
         [JsonPropertyName("payment_product_code")]
         public string PaymentProductCode { get; set; }

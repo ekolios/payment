@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string CategoryName { get; set; }
 
         /// <summary>
-        /// 消费笔数上线。代表一个顾客在所有与芝麻信用合作的商户中，可同时享受该产品类信用服务的订单数量，推荐值为2，最多不超过5。
+        /// 消费笔数上线。代表一个顾客在所有与芝麻信用合作的商户中，可同时享受该product类信用服务的订单数量，推荐值为2，最多不超过5。
         /// </summary>
         [JsonPropertyName("global_orders_limit_number")]
         public long GlobalOrdersLimitNumber { get; set; }

@@ -20,11 +20,11 @@ namespace WebApplicationSample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // 引入Payment 依赖注入
+            // Introduction of Payment dependency injection
             services.AddAlipay();
             services.AddWeChatPay();
 
-            // 在 appsettings.json(开发环境：appsettings.Development.json) 中 配置选项
+            // Configure options in appsettings.json (development environment: appsettings.Development.json)
             services.Configure<AlipayOptions>(Configuration.GetSection("Alipay"));
             services.Configure<WeChatPayOptions>(Configuration.GetSection("WeChatPay"));
 

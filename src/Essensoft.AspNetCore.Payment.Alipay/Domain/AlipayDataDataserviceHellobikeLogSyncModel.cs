@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public long PayPriceCent { get; set; }
 
         /// <summary>
-        /// 用户购买hellobike月卡时使用的支付方式，目前和hellobike约定的几种支付方式为：alipay_account:支付宝支付，hellobike_account:hellobike余额，weixin_pay:微信支付；该参数取值为hellobike调用方自身的业务参数。
+        /// 用户购买hellobike月卡时使用的支付方式，目前和hellobike约定的几种支付方式为：alipay_account:支付宝支付，hellobike_account:hellobike余额，weixin_pay:WeChat Pay；该参数取值为hellobike调用方自身的业务参数。
         /// </summary>
         [JsonPropertyName("pay_tool")]
         public string PayTool { get; set; }

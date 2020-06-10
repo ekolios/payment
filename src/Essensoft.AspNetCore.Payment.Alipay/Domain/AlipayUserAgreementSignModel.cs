@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BindedMobile { get; set; }
 
         /// <summary>
-        /// 签约确认方式，用户进行协议签约时的确认方式，不同产品所支持的确认方式不同。  目前仅支持如下两类：  M：手机校验码回填确认方式。  如果为空，则默认为无需用户确认。
+        /// 签约确认方式，用户进行协议签约时的确认方式，不同product所支持的确认方式不同。  目前仅支持如下两类：  M：手机校验码回填确认方式。  如果为空，则默认为无需用户确认。
         /// </summary>
         [JsonPropertyName("confirm_type")]
         public string ConfirmType { get; set; }
@@ -44,7 +44,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public DeviceParams DeviceParams { get; set; }
 
         /// <summary>
-        /// 商户签约号，代扣协议中标示用户的唯一签约号（确保在商户系统中唯一）。  格式规则：支持大写小写字母和数字，最长32位。  商户系统按需传入，如果同一用户在同一产品码、同一签约场景下，签订了多份代扣协议，那么需要指定并传入该值。
+        /// 商户签约号，代扣协议中标示用户的唯一签约号（确保在商户系统中唯一）。  格式规则：支持大写小写字母和数字，最长32位。  商户系统按需传入，如果同一用户在同一product码、同一签约场景下，签订了多份代扣协议，那么需要指定并传入该值。
         /// </summary>
         [JsonPropertyName("external_agreement_no")]
         public string ExternalAgreementNo { get; set; }
@@ -56,19 +56,19 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ExternalLogonId { get; set; }
 
         /// <summary>
-        /// 个人签约产品码，商户和支付宝签约时确定，商户可咨询技术支持。
+        /// 个人签约product码，商户和支付宝签约时确定，商户可咨询技术支持。
         /// </summary>
         [JsonPropertyName("personal_product_code")]
         public string PersonalProductCode { get; set; }
 
         /// <summary>
-        /// 签约产品属性，json格式
+        /// 签约product属性，json格式
         /// </summary>
         [JsonPropertyName("prod_params")]
         public ProdParams ProdParams { get; set; }
 
         /// <summary>
-        /// 销售产品码，商户签约的支付宝合同所对应的产品码。
+        /// 销售product码，商户签约的支付宝合同所对应的product码。
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }
@@ -98,7 +98,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string SignValidityPeriod { get; set; }
 
         /// <summary>
-        /// 此参数用于传递子商户信息，目前商户代扣、海外代扣、淘旅行信用住产品支持传入该参数(销售方案中是否允许自定义子商户信息选是)；  目前支持四个key值：  sub_merchant_id (子商户id)  sub_merchant_name (子商户名称)  sub_merchant_service_name (子商户服务名称)  sub_merchant_service_description (子商户服务描述)
+        /// 此参数用于传递子商户信息，目前商户代扣、海外代扣、淘旅行信用住product支持传入该参数(销售方案中是否允许自定义子商户信息选是)；  目前支持四个key值：  sub_merchant_id (子商户id)  sub_merchant_name (子商户名称)  sub_merchant_service_name (子商户服务名称)  sub_merchant_service_description (子商户服务描述)
         /// </summary>
         [JsonPropertyName("sub_merchant")]
         public string SubMerchant { get; set; }

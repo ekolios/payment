@@ -98,7 +98,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PointLibId { get; set; }
 
         /// <summary>
-        /// 产品码
+        /// product码
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

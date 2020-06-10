@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class AlipaySecurityRiskRainscoreQueryRequest : IAlipayRequest<AlipaySecurityRiskRainscoreQueryResponse>
     {
         /// <summary>
-        /// RAIN （Risk of Activity, Identity and Network）是蚁盾旗下产品，专业提供风险评分服务，是一套能够对手机号进行风险预测、风险解释的评分体系。
+        /// RAIN （Risk of Activity, Identity and Network）是蚁盾旗下product，专业提供风险评分服务，是一套能够对手机号进行风险预测、风险解释的评分体系。
         /// </summary>
         public string BizContent { get; set; }
 

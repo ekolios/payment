@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class ArrangementConditionGroupSelector : AlipayObject
     {
         /// <summary>
-        /// 是否选择最新的产品条件,默认为TRUE
+        /// 是否选择最新的product条件,默认为TRUE
         /// </summary>
         [JsonPropertyName("select_latest_pd_cd")]
         public bool SelectLatestPdCd { get; set; }

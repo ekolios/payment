@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string MergeOrderId { get; set; }
 
         /// <summary>
-        /// 销售产品码。  STD_APP_TRANSFER：支付宝APP收银台转账
+        /// 销售product码。  STD_APP_TRANSFER：支付宝APP收银台转账
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

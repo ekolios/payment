@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PrizeCountPerAccount { get; set; }
 
         /// <summary>
-        /// 产品类型 支付宝交易:trade   支付宝账单中心:commonDeduct   支付宝转账中心:ttc   支付宝通用代扣:billcenter
+        /// product类型 支付宝交易:trade   支付宝账单中心:commonDeduct   支付宝转账中心:ttc   支付宝通用代扣:billcenter
         /// </summary>
         [JsonPropertyName("product_type")]
         public string ProductType { get; set; }

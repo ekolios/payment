@@ -5,7 +5,7 @@ using Essensoft.AspNetCore.Payment.WeChatPay.Utility;
 namespace Essensoft.AspNetCore.Payment.WeChatPay.Request
 {
     /// <summary>
-    /// 获取RSA加密公钥 (普通商户)
+    /// Obtain RSA encrypted public key (普通商户)
     /// </summary>
     public class WeChatPayRiskGetPublicKeyRequest : IWeChatPayCertRequest<WeChatPayRiskGetPublicKeyResponse>
     {

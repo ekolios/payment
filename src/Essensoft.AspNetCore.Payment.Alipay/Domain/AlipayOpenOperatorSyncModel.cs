@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string MasterUserId { get; set; }
 
         /// <summary>
-        /// 产品code，FINCLOUD=金融云，CSC=云客服
+        /// productcode，FINCLOUD=金融云，CSC=云客服
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class KdsOrderInfoDTO : AlipayObject
     {
         /// <summary>
-        /// 订单业务产品类型.  "KB_ORDER_DISHES": 口碑c端点餐; "KB_RESERVATION": 口碑预约点餐; "KB_POS_ORDER_DISHES": 口碑B端盒子订单 "ISV_ORDER_DISHES": ISV服务商订单 "ISV_RESERVATION": ISV服务商预点餐订单  备注: 口碑的订单, 如果普通订单传 KB_ORDER_DISHES, 预约单传KB_RESERVATION 其他来源订单, 包括客如云和other, 默认ISV_ORDER_DISHES,  如果是预订单就传ISV_RESERVATION
+        /// 订单业务product类型.  "KB_ORDER_DISHES": 口碑c端点餐; "KB_RESERVATION": 口碑预约点餐; "KB_POS_ORDER_DISHES": 口碑B端盒子订单 "ISV_ORDER_DISHES": ISV服务商订单 "ISV_RESERVATION": ISV服务商预点餐订单  备注: 口碑的订单, 如果普通订单传 KB_ORDER_DISHES, 预约单传KB_RESERVATION 其他来源订单, 包括客如云和other, 默认ISV_ORDER_DISHES,  如果是预订单就传ISV_RESERVATION
         /// </summary>
         [JsonPropertyName("biz_product")]
         public string BizProduct { get; set; }

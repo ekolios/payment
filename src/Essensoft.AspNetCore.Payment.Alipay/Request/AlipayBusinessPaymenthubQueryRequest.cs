@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class AlipayBusinessPaymenthubQueryRequest : IAlipayRequest<AlipayBusinessPaymenthubQueryResponse>
     {
         /// <summary>
-        /// 聚合支付产品操作指令查询接口
+        /// 聚合支付product操作指令查询接口
         /// </summary>
         public string BizContent { get; set; }
 

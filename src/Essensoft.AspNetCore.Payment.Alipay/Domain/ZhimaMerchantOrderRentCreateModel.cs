@@ -122,7 +122,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OutOrderNo { get; set; }
 
         /// <summary>
-        /// 信用借还的产品码，传入固定值：w1010100000000002858
+        /// 信用借还的product码，传入固定值：w1010100000000002858
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

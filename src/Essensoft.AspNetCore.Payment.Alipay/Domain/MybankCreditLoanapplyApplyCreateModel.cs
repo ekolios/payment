@@ -99,7 +99,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Name { get; set; }
 
         /// <summary>
-        /// 运营产品码，平台大数贷机构无须填写
+        /// 运营product码，平台大数贷机构无须填写
         /// </summary>
         [JsonPropertyName("op_pd_code")]
         public string OpPdCode { get; set; }
@@ -111,7 +111,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OutMemId { get; set; }
 
         /// <summary>
-        /// 外部统一编码，外部机构与网商合作的方案产品标识，用于标识所属的合作业务，op_pd_code为空时该字段必传。
+        /// 外部统一编码，外部机构与网商合作的方案product标识，用于标识所属的合作业务，op_pd_code为空时该字段必传。
         /// </summary>
         [JsonPropertyName("out_uni_code")]
         public string OutUniCode { get; set; }

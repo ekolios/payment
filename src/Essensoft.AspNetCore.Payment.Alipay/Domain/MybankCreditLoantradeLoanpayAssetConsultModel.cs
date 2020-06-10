@@ -27,7 +27,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public List<LoanPayConsultOrder> OrderInfo { get; set; }
 
         /// <summary>
-        /// 收单销售产品码
+        /// 收单销售product码
         /// </summary>
         [JsonPropertyName("payment_sale_pd_code")]
         public string PaymentSalePdCode { get; set; }

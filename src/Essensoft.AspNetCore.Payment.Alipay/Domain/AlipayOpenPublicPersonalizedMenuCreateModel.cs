@@ -15,7 +15,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public List<ButtonObject> Button { get; set; }
 
         /// <summary>
-        /// 标签规则，目前限定只能传入1条，在个性化菜单创建成功后，满足该标签规则的用户进入生活号首页，将看到该套菜单。
+        /// 标签规则，目前限定只能传入1条，在个性化菜单创建成功后，满足该标签规则的用户进入生活号Home，将看到该套菜单。
         /// </summary>
         [JsonPropertyName("label_rule")]
         public List<LabelRule> LabelRule { get; set; }

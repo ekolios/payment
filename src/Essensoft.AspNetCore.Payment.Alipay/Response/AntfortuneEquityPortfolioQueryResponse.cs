@@ -46,7 +46,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string MinPurchaseAmount { get; set; }
 
         /// <summary>
-        /// 组合产品代码
+        /// 组合product代码
         /// </summary>
         [JsonPropertyName("portfolio_code")]
         public string PortfolioCode { get; set; }
@@ -70,7 +70,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public List<string> PortfolioTagList { get; set; }
 
         /// <summary>
-        /// 组合类型 ("STEADY_PORTFOLIO", "稳健组合"), ("MONETARY_BONDS_PORTFOLIO","货债组合"), ("ASSET_CONFIG", "资产配置"), ("GLOBAL_CONFIG", "全球配置 "), ("GOAL_RISK", "目标风险"), ("SELECTED_PRODUCT_PORTFOLIO", "精选产品组合"), ("SELECTED_TIME_STRATEGY", "择时策略"), ("ROTATION_STRATEGY", "轮动策略")
+        /// 组合类型 ("STEADY_PORTFOLIO", "稳健组合"), ("MONETARY_BONDS_PORTFOLIO","货债组合"), ("ASSET_CONFIG", "资产配置"), ("GLOBAL_CONFIG", "全球配置 "), ("GOAL_RISK", "目标风险"), ("SELECTED_PRODUCT_PORTFOLIO", "精选product组合"), ("SELECTED_TIME_STRATEGY", "择时策略"), ("ROTATION_STRATEGY", "轮动策略")
         /// </summary>
         [JsonPropertyName("portfolio_type")]
         public string PortfolioType { get; set; }
@@ -82,7 +82,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string ProductId { get; set; }
 
         /// <summary>
-        /// 收益率类型，("last_week", "近1周"),"last_month", "近1月"),("last_quarter", "近3月"),("last_half_year", "近半年"),("this_year", "今年"),("last_year", "近1年"),("yield_2_year", "近2年"),("yield_3_year", "近3年"),("yield_5_year", "近5年"),("NETVALUE", "产品净值"),("SINCE_ESTABLISHMENT", "成立以来")
+        /// 收益率类型，("last_week", "近1周"),"last_month", "近1月"),("last_quarter", "近3月"),("last_half_year", "近半年"),("this_year", "今年"),("last_year", "近1年"),("yield_2_year", "近2年"),("yield_3_year", "近3年"),("yield_5_year", "近5年"),("NETVALUE", "product净值"),("SINCE_ESTABLISHMENT", "成立以来")
         /// </summary>
         [JsonPropertyName("profit_period_key")]
         public string ProfitPeriodKey { get; set; }
@@ -94,7 +94,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string ProfitRate { get; set; }
 
         /// <summary>
-        /// 组合产品风险等级,L(低风险),ML(中低风险),M(中风险),MH(中高风险),H(高风险)
+        /// 组合product风险等级,L(低风险),ML(中低风险),M(中风险),MH(中高风险),H(高风险)
         /// </summary>
         [JsonPropertyName("risk_evaluation")]
         public string RiskEvaluation { get; set; }

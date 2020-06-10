@@ -73,15 +73,15 @@ namespace Essensoft.AspNetCore.Payment.Alipay
 		void SetTerminalInfo(string terminalInfo);
 
         /// <summary>
-        /// 获取产品码。
+        /// 获取product码。
         /// </summary>
-        /// <returns>产品码</returns>
+        /// <returns>product码</returns>
         string GetProdCode();
 
         /// <summary>
-        /// 设置产品码。
+        /// 设置product码。
         /// </summary>
-        /// <returns>产品码</returns>
+        /// <returns>product码</returns>
         void SetProdCode(string prodCode);
 
         /// <summary>

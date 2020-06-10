@@ -44,13 +44,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PartnerId { get; set; }
 
         /// <summary>
-        /// 产品编码;由蚂蚁保险平台分配
+        /// product编码;由蚂蚁保险平台分配
         /// </summary>
         [JsonPropertyName("prod_code")]
         public string ProdCode { get; set; }
 
         /// <summary>
-        /// 产品版本号
+        /// product版本号
         /// </summary>
         [JsonPropertyName("prod_version")]
         public string ProdVersion { get; set; }

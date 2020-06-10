@@ -291,7 +291,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PeerpayerRealName { get; set; }
 
         /// <summary>
-        /// 产品码
+        /// product码
         /// </summary>
         [JsonPropertyName("product")]
         public string Product { get; set; }

@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class ZhimaCreditPeIndustryLocationUploadRequest : IAlipayRequest<ZhimaCreditPeIndustryLocationUploadResponse>
     {
         /// <summary>
-        /// 信用服务产品地图点位上传
+        /// 信用服务product地图点位上传
         /// </summary>
         public string BizContent { get; set; }
 

@@ -33,13 +33,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string AuthCode { get; set; }
 
         /// <summary>
-        /// 预授权确认模式，授权转交易请求中传入，适用于预授权转交易业务使用，目前只支持PRE_AUTH(预授权产品码)  COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLETE：转交易支付完成不结束预授权，不解冻剩余金额
+        /// 预授权确认模式，授权转交易请求中传入，适用于预授权转交易业务使用，目前只支持PRE_AUTH(预授权product码)  COMPLETE：转交易支付完成结束预授权，解冻剩余金额; NOT_COMPLETE：转交易支付完成不结束预授权，不解冻剩余金额
         /// </summary>
         [JsonPropertyName("auth_confirm_mode")]
         public string AuthConfirmMode { get; set; }
 
         /// <summary>
-        /// 预授权号，预授权转交易请求中传入，适用于预授权转交易业务使用，目前只支持FUND_TRADE_FAST_PAY（资金订单即时到帐交易）、境外预授权产品（OVERSEAS_AUTH_PAY）两个产品。
+        /// 预授权号，预授权转交易请求中传入，适用于预授权转交易业务使用，目前只支持FUND_TRADE_FAST_PAY（资金订单即时到帐交易）、境外预授权product（OVERSEAS_AUTH_PAY）两个product。
         /// </summary>
         [JsonPropertyName("auth_no")]
         public string AuthNo { get; set; }
@@ -117,7 +117,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OutTradeNo { get; set; }
 
         /// <summary>
-        /// 销售产品码
+        /// 销售product码
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

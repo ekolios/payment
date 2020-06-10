@@ -26,13 +26,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string IsSuccess { get; set; }
 
         /// <summary>
-        /// 不可用产品集合
+        /// 不可用product集合
         /// </summary>
         [JsonPropertyName("unusable_product_list")]
         public string UnusableProductList { get; set; }
 
         /// <summary>
-        /// 可用产品集合
+        /// 可用product集合
         /// </summary>
         [JsonPropertyName("usable_product_group")]
         public string UsableProductGroup { get; set; }

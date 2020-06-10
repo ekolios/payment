@@ -21,7 +21,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public RelationInfo RelationInfo { get; set; }
 
         /// <summary>
-        /// 关系强度，具体关系强度code见产品文档
+        /// 关系强度，具体关系强度code见product文档
         /// </summary>
         [JsonPropertyName("relation_rank")]
         public string RelationRank { get; set; }

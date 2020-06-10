@@ -74,7 +74,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public long PaymentPrice { get; set; }
 
         /// <summary>
-        /// 优惠券核销数据回流时填写 支付渠道 alipay_account:支付宝支付 merchant_account:接入方账户余额 weixin_pay:微信支付 (可不传)
+        /// 优惠券核销数据回流时填写 支付渠道 alipay_account:支付宝支付 merchant_account:接入方账户余额 weixin_pay:WeChat Pay (可不传)
         /// </summary>
         [JsonPropertyName("payment_type")]
         public string PaymentType { get; set; }

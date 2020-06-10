@@ -264,7 +264,7 @@ namespace WebApplicationSample.Controllers
 
     #endregion
 
-    #region 微信支付异步通知
+    #region WeChat Pay异步通知
 
     [Route("notify/wechatpay")]
     public class WeChatPayNotifyController : Controller

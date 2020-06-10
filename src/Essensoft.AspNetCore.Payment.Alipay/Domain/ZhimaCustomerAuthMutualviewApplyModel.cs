@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string IdentityParam { get; set; }
 
         /// <summary>
-        /// 当前业务产品的产品码，接口提供方分配，填写的值即是示例值中的值
+        /// 当前业务product的product码，接口提供方分配，填写的值即是示例值中的值
         /// </summary>
         [JsonPropertyName("product_param")]
         public string ProductParam { get; set; }

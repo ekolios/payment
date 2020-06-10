@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Account { get; set; }
 
         /// <summary>
-        /// 若服务类型为物业缴费账单模式，每个小区默认的收款帐号为授权物业的支付宝账号，但允许开发者为每个小区服务传入一个指定的物业收款帐号，收款帐号支持三种类型：    ALIPAY_LOGON_ID - 物业签约支付宝收单产品时配置的支付宝收款限制集中的支付宝登陆账号，必须在授权物业账号名下的收款限制集中。    ALIPAY_PARTNER_ID - 物业签约支付宝收单产品时配置的支付宝收款限制集中的账号PID，2088开头的16位账号。必须在授权物业账号名下的收款限制集中。    BANK_CARD_ID - 物业集团公司在签约收单产品时支付宝平台配置的银行卡编号（注：非实际银行账号）。
+        /// 若服务类型为物业缴费账单模式，每个小区默认的收款帐号为授权物业的支付宝账号，但允许开发者为每个小区服务传入一个指定的物业收款帐号，收款帐号支持三种类型：    ALIPAY_LOGON_ID - 物业签约支付宝收单product时配置的支付宝收款限制集中的支付宝登陆账号，必须在授权物业账号名下的收款限制集中。    ALIPAY_PARTNER_ID - 物业签约支付宝收单product时配置的支付宝收款限制集中的账号PID，2088开头的16位账号。必须在授权物业账号名下的收款限制集中。    BANK_CARD_ID - 物业集团公司在签约收单product时支付宝平台配置的银行卡编号（注：非实际银行账号）。
         /// </summary>
         [JsonPropertyName("account_type")]
         public string AccountType { get; set; }

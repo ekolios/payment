@@ -63,7 +63,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PassId { get; set; }
 
         /// <summary>
-        /// 产品业务类型，模板创建时在模板JSON文本中指定
+        /// product业务类型，模板创建时在模板JSON文本中指定
         /// </summary>
         [JsonPropertyName("product")]
         public string Product { get; set; }

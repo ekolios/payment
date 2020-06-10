@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class KoubeiShopMallAuditQueryRequest : IAlipayRequest<KoubeiShopMallAuditQueryResponse>
     {
         /// <summary>
-        /// 商圈首页地址变更工单审核状态查询
+        /// 商圈Home地址变更工单审核状态查询
         /// </summary>
         public string BizContent { get; set; }
 

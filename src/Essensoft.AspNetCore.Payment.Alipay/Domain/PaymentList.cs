@@ -51,7 +51,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PaymentId { get; set; }
 
         /// <summary>
-        /// 支付方式，包括但不限于：  (1) ONLINE : 线上支付  (2) OFFLINE_ALIPAY：线下支付宝收款  (3) OFFLINE_WECHAT：线下微信支付  (4) OFFLINE_BANKCARD：线下银行卡支付  (5) OFFLINE_CASH : 线下现金支付  (6) OFFLINE_POINTS : 积分支付  (7) OFFLINE_STORED_VALUE_CARD : 储值卡支付  (8) OFFLINE_KOUBEI_VOUCHER : 口碑券  (9) OFFLINE_MEITUAN : 美团  (10) OFFLINE_OTHER : 线下其他支付方式
+        /// 支付方式，包括但不限于：  (1) ONLINE : 线上支付  (2) OFFLINE_ALIPAY：线下支付宝收款  (3) OFFLINE_WECHAT：线下WeChat Pay  (4) OFFLINE_BANKCARD：线下银行卡支付  (5) OFFLINE_CASH : 线下现金支付  (6) OFFLINE_POINTS : 积分支付  (7) OFFLINE_STORED_VALUE_CARD : 储值卡支付  (8) OFFLINE_KOUBEI_VOUCHER : 口碑券  (9) OFFLINE_MEITUAN : 美团  (10) OFFLINE_OTHER : 线下其他支付方式
         /// </summary>
         [JsonPropertyName("payment_method")]
         public string PaymentMethod { get; set; }

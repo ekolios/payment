@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BsnType { get; set; }
 
         /// <summary>
-        /// 销售产品码，特殊可选，某些场景是必填的
+        /// 销售product码，特殊可选，某些场景是必填的
         /// </summary>
         [JsonPropertyName("sale_pd_code")]
         public string SalePdCode { get; set; }

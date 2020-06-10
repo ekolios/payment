@@ -50,7 +50,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Mobile { get; set; }
 
         /// <summary>
-        /// 运营产品编码，仅当arrangement_no存在的时候，此值可以为空；
+        /// 运营product编码，仅当arrangement_no存在的时候，此值可以为空；
         /// </summary>
         [JsonPropertyName("op_pd_code")]
         public string OpPdCode { get; set; }

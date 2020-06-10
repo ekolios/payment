@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class AntProdpaasProductCommonQueryRequest : IAlipayRequest<AntProdpaasProductCommonQueryResponse>
     {
         /// <summary>
-        /// 查询产品平台产品信息接口
+        /// 查询product平台product信息接口
         /// </summary>
         public string BizContent { get; set; }
 

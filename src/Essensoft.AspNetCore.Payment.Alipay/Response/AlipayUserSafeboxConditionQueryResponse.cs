@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
     public class AlipayUserSafeboxConditionQueryResponse : AlipayResponse
     {
         /// <summary>
-        /// 产品是否紧急下线状态。true：紧急下线，false：未紧急下线。
+        /// product是否紧急下线状态。true：紧急下线，false：未紧急下线。
         /// </summary>
         [JsonPropertyName("emergency_offline")]
         public bool EmergencyOffline { get; set; }

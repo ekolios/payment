@@ -20,13 +20,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string AlipayUserId { get; set; }
 
         /// <summary>
-        /// 协议产品码，商户和支付宝签约时确定，商户可咨询技术支持。
+        /// 协议product码，商户和支付宝签约时确定，商户可咨询技术支持。
         /// </summary>
         [JsonPropertyName("personal_product_code")]
         public string PersonalProductCode { get; set; }
 
         /// <summary>
-        /// 销售产品码，商户签约的支付宝合同所对应的产品码。
+        /// 销售product码，商户签约的支付宝合同所对应的product码。
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

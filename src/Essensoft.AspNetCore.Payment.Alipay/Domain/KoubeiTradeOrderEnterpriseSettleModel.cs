@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class KoubeiTradeOrderEnterpriseSettleModel : AlipayObject
     {
         /// <summary>
-        /// 业务产品
+        /// 业务product
         /// </summary>
         [JsonPropertyName("biz_product")]
         public string BizProduct { get; set; }

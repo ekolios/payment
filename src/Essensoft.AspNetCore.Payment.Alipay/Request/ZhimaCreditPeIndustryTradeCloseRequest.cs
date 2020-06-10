@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class ZhimaCreditPeIndustryTradeCloseRequest : IAlipayRequest<ZhimaCreditPeIndustryTradeCloseResponse>
     {
         /// <summary>
-        /// 信用服务产品交易关闭
+        /// 信用服务product交易关闭
         /// </summary>
         public string BizContent { get; set; }
 

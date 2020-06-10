@@ -26,7 +26,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PrizeIdList { get; set; }
 
         /// <summary>
-        /// 系统来源，接入请和支付宝营销平台开发or产品同学申请
+        /// 系统来源，接入请和支付宝营销平台开发orproduct同学申请
         /// </summary>
         [JsonPropertyName("source")]
         public string Source { get; set; }

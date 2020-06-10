@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class AntProdpaasArrangementCommonQueryModel : AlipayObject
     {
         /// <summary>
-        /// 合约基本信息选择器，根据产品编码，合约状态编码来过滤合约
+        /// 合约基本信息选择器，根据product编码，合约状态编码来过滤合约
         /// </summary>
         [JsonPropertyName("arrangement_base_selector")]
         public ArrangementBaseSelector ArrangementBaseSelector { get; set; }

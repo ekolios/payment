@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BindAccountNo { get; set; }
 
         /// <summary>
-        /// 开发者期望在服务窗首页看到的关于该用户的显示信息，最长10个字符
+        /// 开发者期望在服务窗Home看到的关于该用户的显示信息，最长10个字符
         /// </summary>
         [JsonPropertyName("display_name")]
         public string DisplayName { get; set; }

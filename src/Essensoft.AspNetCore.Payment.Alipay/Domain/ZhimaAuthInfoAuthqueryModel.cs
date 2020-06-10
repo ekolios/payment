@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class ZhimaAuthInfoAuthqueryModel : AlipayObject
     {
         /// <summary>
-        /// 用于标识当前授权查询的类型，分为企业信用产品授权查询和个人信用产品授权查询；默认为个人信用授权查询即为C2B；  个人与商户间授权查询则传入C2B；  个人通过商户进行个人互查时授权则传入C2ConB；  企业授权查询则传入B2B；
+        /// 用于标识当前授权查询的类型，分为企业信用product授权查询和个人信用product授权查询；默认为个人信用授权查询即为C2B；  个人与商户间授权查询则传入C2B；  个人通过商户进行个人互查时授权则传入C2ConB；  企业授权查询则传入B2B；
         /// </summary>
         [JsonPropertyName("auth_category")]
         public string AuthCategory { get; set; }

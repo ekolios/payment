@@ -45,7 +45,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
         public string AppSlogan { get; set; }
 
         /// <summary>
-        /// 订购的服务商品ID所在的市场编码。新接入场景必须传递，具体值请联系产品分配。
+        /// 订购的服务商品ID所在的市场编码。新接入场景必须传递，具体值请联系product分配。
         /// </summary>
         public string MarketCode { get; set; }
 

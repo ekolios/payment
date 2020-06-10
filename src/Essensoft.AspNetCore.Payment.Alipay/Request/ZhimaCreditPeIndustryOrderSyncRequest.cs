@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class ZhimaCreditPeIndustryOrderSyncRequest : IAlipayRequest<ZhimaCreditPeIndustryOrderSyncResponse>
     {
         /// <summary>
-        /// 信用服务产品订单同步
+        /// 信用服务product订单同步
         /// </summary>
         public string BizContent { get; set; }
 

@@ -87,7 +87,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OutTradeNo { get; set; }
 
         /// <summary>
-        /// 销售产品码。 如果签约的是当面付快捷版，则传OFFLINE_PAYMENT; 其它支付宝当面付产品传FACE_TO_FACE_PAYMENT； 不传默认使用FACE_TO_FACE_PAYMENT；
+        /// 销售product码。 如果签约的是当面付快捷版，则传OFFLINE_PAYMENT; 其它支付宝当面付product传FACE_TO_FACE_PAYMENT； 不传默认使用FACE_TO_FACE_PAYMENT；
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

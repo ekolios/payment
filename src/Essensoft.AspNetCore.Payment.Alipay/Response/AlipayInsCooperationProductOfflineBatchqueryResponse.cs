@@ -10,7 +10,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
     public class AlipayInsCooperationProductOfflineBatchqueryResponse : AlipayResponse
     {
         /// <summary>
-        /// 返回给机构的线下产品信息列表
+        /// 返回给机构的线下product信息列表
         /// </summary>
         [JsonPropertyName("product_list")]
         public List<InsOffilneProduct> ProductList { get; set; }

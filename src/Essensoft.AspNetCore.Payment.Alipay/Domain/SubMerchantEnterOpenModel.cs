@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class SubMerchantEnterOpenModel : AlipayObject
     {
         /// <summary>
-        /// 扩展字段，为json字符串格式；入驻缴费后开票的产品如果需要传入自定义开票链接，由此字段传入。
+        /// 扩展字段，为json字符串格式；入驻缴费后开票的product如果需要传入自定义开票链接，由此字段传入。
         /// </summary>
         [JsonPropertyName("extend_fields")]
         public string ExtendFields { get; set; }

@@ -33,7 +33,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string DiscountAmount { get; set; }
 
         /// <summary>
-        /// 扩展信息，请参见产品文档
+        /// 扩展信息，请参见product文档
         /// </summary>
         [JsonPropertyName("ext_info")]
         public List<OrderExtInfo> ExtInfo { get; set; }
@@ -45,7 +45,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public List<ItemOrderInfo> ItemOrderList { get; set; }
 
         /// <summary>
-        /// 物流信息  列表最多支持物流信息个数，请参考产品文档  注：若该值不为空，且物流信息同步至我的快递，则在查询订单时可返回具体物流信息
+        /// 物流信息  列表最多支持物流信息个数，请参考product文档  注：若该值不为空，且物流信息同步至我的快递，则在查询订单时可返回具体物流信息
         /// </summary>
         [JsonPropertyName("logistics_info_list")]
         public List<OrderLogisticsInformationRequest> LogisticsInfoList { get; set; }

@@ -5,12 +5,12 @@ using Essensoft.AspNetCore.Payment.WeChatPay.Utility;
 namespace Essensoft.AspNetCore.Payment.WeChatPay.Request
 {
     /// <summary>
-    /// 酒店押金 - 申请退款 (服务商)
+    /// 酒店押金 - Request a refund (服务商)
     /// </summary>
     public class WeChatPayDepositRefundRequest : IWeChatPayCertRequest<WeChatPayDepositRefundResponse>
     {
         /// <summary>
-        /// 微信支付订单号
+        /// WeChat Pay订单号
         /// </summary>
         public string TransactionId { get; set; }
 

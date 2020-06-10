@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string BizLinkedId { get; set; }
 
         /// <summary>
-        /// 业务类型，类型产品名称
+        /// 业务类型，类型product名称
         /// </summary>
         [JsonPropertyName("biz_type")]
         public string BizType { get; set; }

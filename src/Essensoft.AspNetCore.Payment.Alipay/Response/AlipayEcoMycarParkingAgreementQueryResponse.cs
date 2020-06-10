@@ -27,7 +27,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string ExpireTime { get; set; }
 
         /// <summary>
-        /// 仅当当前车场服务商签约了停车无感垫资产品，且指定车牌被当前传入的支付宝用户开通代扣条件下返回
+        /// 仅当当前车场服务商签约了停车无感垫资product，且指定车牌被当前传入的支付宝用户开通代扣条件下返回
         /// </summary>
         [JsonPropertyName("user_advance_info")]
         public UserAdvanceInfo UserAdvanceInfo { get; set; }

@@ -8,19 +8,19 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class AntProdpaasProductCommonQueryModel : AlipayObject
     {
         /// <summary>
-        /// 产品码
+        /// product码
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }
 
         /// <summary>
-        /// 产品查询维度，主要分为基础信息，条件信息和产品关联关系信息等
+        /// product查询维度，主要分为基础信息，条件信息和product关联关系信息等
         /// </summary>
         [JsonPropertyName("product_options")]
         public ProductVOOptions ProductOptions { get; set; }
 
         /// <summary>
-        /// 产品版本
+        /// product版本
         /// </summary>
         [JsonPropertyName("product_version")]
         public string ProductVersion { get; set; }

@@ -74,13 +74,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public long PayTime { get; set; }
 
         /// <summary>
-        /// 与娱乐充值平台对接的产品编号
+        /// 与娱乐充值平台对接的product编号
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }
 
         /// <summary>
-        /// 与娱乐充值平台对接的产品名称
+        /// 与娱乐充值平台对接的product名称
         /// </summary>
         [JsonPropertyName("product_name")]
         public string ProductName { get; set; }

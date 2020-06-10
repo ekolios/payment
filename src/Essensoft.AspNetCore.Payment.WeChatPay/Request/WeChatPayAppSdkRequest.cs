@@ -4,12 +4,12 @@ using Essensoft.AspNetCore.Payment.WeChatPay.Utility;
 namespace Essensoft.AspNetCore.Payment.WeChatPay.Request
 {
     /// <summary>
-    /// APP支付 调起支付
+    /// APP payment
     /// </summary>
     public class WeChatPayAppSdkRequest : IWeChatPaySdkRequest
     {
         /// <summary>
-        /// 预支付交易会话ID
+        /// Prepaid transaction session ID
         /// </summary>
         public string PrepayId { get; set; }
 

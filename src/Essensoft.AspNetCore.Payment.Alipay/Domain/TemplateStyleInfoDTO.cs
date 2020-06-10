@@ -63,13 +63,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public List<string> FeatureDescriptions { get; set; }
 
         /// <summary>
-        /// 设置是否在卡面展示（个人头像）图片信息，默认不展示；  当前仅用于身份验证信息类型的个人头像图片；  图片id随创建卡/更新卡时传入；  详见会员卡产品文档。
+        /// 设置是否在卡面展示（个人头像）图片信息，默认不展示；  当前仅用于身份验证信息类型的个人头像图片；  图片id随创建卡/更新卡时传入；  详见会员卡product文档。
         /// </summary>
         [JsonPropertyName("front_image_enable")]
         public bool FrontImageEnable { get; set; }
 
         /// <summary>
-        /// 设置是否在卡面展示文案信息，默认不展示；  文案信息分行展示，最多展示4行文案，每行文案分为label和value两部分；  文案实际内容随创建卡/更新卡时传入；  详见会员卡产品说明文档。
+        /// 设置是否在卡面展示文案信息，默认不展示；  文案信息分行展示，最多展示4行文案，每行文案分为label和value两部分；  文案实际内容随创建卡/更新卡时传入；  详见会员卡product说明文档。
         /// </summary>
         [JsonPropertyName("front_text_list_enable")]
         public bool FrontTextListEnable { get; set; }

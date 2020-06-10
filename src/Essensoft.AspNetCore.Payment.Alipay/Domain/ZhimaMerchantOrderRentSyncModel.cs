@@ -26,7 +26,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OverdueTime { get; set; }
 
         /// <summary>
-        /// 信用套餐产品码，固定值：w1010100000000002734
+        /// 信用套餐product码，固定值：w1010100000000002734
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

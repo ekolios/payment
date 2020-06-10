@@ -158,7 +158,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string SourceEventCode { get; set; }
 
         /// <summary>
-        /// 调用方产品码
+        /// 调用方product码
         /// </summary>
         [JsonPropertyName("source_product_code")]
         public string SourceProductCode { get; set; }

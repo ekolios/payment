@@ -10,7 +10,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
     public class AlipayEbppProdmodeDropdataQueryResponse : AlipayResponse
     {
         /// <summary>
-        /// 返回业务类型、子业务类型、产品模式及销账模式下拉列表
+        /// 返回业务类型、子业务类型、product模式及销账模式下拉列表
         /// </summary>
         [JsonPropertyName("data_list")]
         public List<BizListDataInfo> DataList { get; set; }

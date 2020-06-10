@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BizAmount { get; set; }
 
         /// <summary>
-        /// 业务产品id，由支付宝分配。
+        /// 业务productid，由支付宝分配。
         /// </summary>
         [JsonPropertyName("biz_prod_id")]
         public string BizProdId { get; set; }

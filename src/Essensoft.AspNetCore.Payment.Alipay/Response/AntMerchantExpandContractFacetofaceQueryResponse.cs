@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string GmtCreate { get; set; }
 
         /// <summary>
-        /// 产品签约审核结果，申请单状态为审核失败时失败原因用“;”分割，其他状态产品签约审核结果为空
+        /// product签约审核结果，申请单状态为审核失败时失败原因用“;”分割，其他状态product签约审核结果为空
         /// </summary>
         [JsonPropertyName("order_detail")]
         public string OrderDetail { get; set; }

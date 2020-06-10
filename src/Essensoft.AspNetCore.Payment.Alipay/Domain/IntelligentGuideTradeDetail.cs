@@ -38,13 +38,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string FifthRecommendation { get; set; }
 
         /// <summary>
-        /// 商户服务项目产品的一级类目，是一个枚举enum类型。项目/商品/卡项。单选、必填。
+        /// 商户服务项目product的一级类目，是一个枚举enum类型。项目/商品/卡项。单选、必填。
         /// </summary>
         [JsonPropertyName("first_category")]
         public string FirstCategory { get; set; }
 
         /// <summary>
-        /// 第一推荐语，选填项。用于商家描述产品优势，推荐理由。
+        /// 第一推荐语，选填项。用于商家描述product优势，推荐理由。
         /// </summary>
         [JsonPropertyName("first_recommendation")]
         public string FirstRecommendation { get; set; }
@@ -98,7 +98,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string SecondCategory { get; set; }
 
         /// <summary>
-        /// 第二推荐语，选填项。用于商家描述产品优势，推荐理由。
+        /// 第二推荐语，选填项。用于商家描述product优势，推荐理由。
         /// </summary>
         [JsonPropertyName("second_recommendation")]
         public string SecondRecommendation { get; set; }
@@ -110,7 +110,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ServiceStaff { get; set; }
 
         /// <summary>
-        /// 第三推荐语，选填项。用于商家描述产品优势，推荐理由。
+        /// 第三推荐语，选填项。用于商家描述product优势，推荐理由。
         /// </summary>
         [JsonPropertyName("third_recommendation")]
         public string ThirdRecommendation { get; set; }

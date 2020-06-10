@@ -80,13 +80,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string RepayMode { get; set; }
 
         /// <summary>
-        /// 销售产品码
+        /// 销售product码
         /// </summary>
         [JsonPropertyName("sale_pd_code")]
         public string SalePdCode { get; set; }
 
         /// <summary>
-        /// 销售产品版本
+        /// 销售product版本
         /// </summary>
         [JsonPropertyName("sale_pd_version")]
         public string SalePdVersion { get; set; }

@@ -50,7 +50,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string PayDate { get; set; }
 
         /// <summary>
-        /// 转账单据状态。   SUCCESS：成功（配合"单笔转账到银行账户接口"产品使用时, 同一笔单据多次查询有可能从成功变成退票状态）；   FAIL：失败（具体失败原因请参见error_code以及fail_reason返回值）；   INIT：等待处理；   DEALING：处理中；   REFUND：退票（仅配合"单笔转账到银行账户接口"产品使用时会涉及, 具体退票原因请参见fail_reason返回值）；   UNKNOWN：状态未知。
+        /// 转账单据状态。   SUCCESS：成功（配合"单笔转账到银行账户接口"product使用时, 同一笔单据多次查询有可能从成功变成退票状态）；   FAIL：失败（具体失败原因请参见error_code以及fail_reason返回值）；   INIT：等待处理；   DEALING：处理中；   REFUND：退票（仅配合"单笔转账到银行账户接口"product使用时会涉及, 具体退票原因请参见fail_reason返回值）；   UNKNOWN：状态未知。
         /// </summary>
         [JsonPropertyName("status")]
         public string Status { get; set; }

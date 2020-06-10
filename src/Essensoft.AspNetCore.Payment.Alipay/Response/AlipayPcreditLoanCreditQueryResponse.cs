@@ -39,7 +39,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public long RepayDay { get; set; }
 
         /// <summary>
-        /// 贷款产品方案
+        /// 贷款product方案
         /// </summary>
         [JsonPropertyName("schema")]
         public SchemaVO Schema { get; set; }

@@ -74,7 +74,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string ZmGrade { get; set; }
 
         /// <summary>
-        /// 芝麻风控产品集联合结果,Y/N
+        /// 芝麻风控product集联合结果,Y/N
         /// </summary>
         [JsonPropertyName("zm_risk")]
         public string ZmRisk { get; set; }

@@ -68,7 +68,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Name { get; set; }
 
         /// <summary>
-        /// 产品码，标记商户接入的具体产品；直接使用每个接口入参中示例值即可
+        /// product码，标记商户接入的具体product；直接使用每个接口入参中示例值即可
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

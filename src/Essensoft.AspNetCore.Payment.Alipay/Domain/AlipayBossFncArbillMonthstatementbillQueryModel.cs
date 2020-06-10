@@ -123,7 +123,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public List<string> PayWayList { get; set; }
 
         /// <summary>
-        /// 产品码,对于金融云为商品
+        /// product码,对于金融云为商品
         /// </summary>
         [JsonPropertyName("prod_code")]
         public string ProdCode { get; set; }

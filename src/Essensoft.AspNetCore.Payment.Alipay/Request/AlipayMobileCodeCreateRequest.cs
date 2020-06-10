@@ -15,7 +15,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
         public string BizLinkedId { get; set; }
 
         /// <summary>
-        /// 类似产品名称，根据该值决定码存储类型；新接业务需要找码平台技术配置
+        /// 类似product名称，根据该值决定码存储类型；新接业务需要找码平台技术配置
         /// </summary>
         public string BizType { get; set; }
 

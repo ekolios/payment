@@ -10,7 +10,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
     public class AlipayFinanceZcbEndowmentorderDetailQueryResponse : AlipayResponse
     {
         /// <summary>
-        /// order_list：查询出来的养老险指定产品的订单列表，EndowmentOrder模型包含：orderId，applyAmount，payTime，taRrequestId 4个字段
+        /// order_list：查询出来的养老险指定product的订单列表，EndowmentOrder模型包含：orderId，applyAmount，payTime，taRrequestId 4个字段
         /// </summary>
         [JsonPropertyName("order_list")]
         public List<EndowmentOrder> OrderList { get; set; }

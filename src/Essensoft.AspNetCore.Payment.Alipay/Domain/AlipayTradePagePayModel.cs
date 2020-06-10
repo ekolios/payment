@@ -93,7 +93,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PassbackParams { get; set; }
 
         /// <summary>
-        /// 销售产品码，与支付宝签约的产品码名称。  注：目前仅支持FAST_INSTANT_TRADE_PAY
+        /// 销售product码，与支付宝签约的product码名称。  注：目前仅支持FAST_INSTANT_TRADE_PAY
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

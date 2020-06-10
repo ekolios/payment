@@ -16,7 +16,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string BillAmount { get; set; }
 
         /// <summary>
-        /// 产品码
+        /// product码
         /// </summary>
         [JsonPropertyName("biz_product")]
         public string BizProduct { get; set; }

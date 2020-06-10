@@ -44,7 +44,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ExtendParams { get; set; }
 
         /// <summary>
-        /// 此参数值取商户签约销售方案时的销售产品码
+        /// 此参数值取商户签约销售方案时的销售product码
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

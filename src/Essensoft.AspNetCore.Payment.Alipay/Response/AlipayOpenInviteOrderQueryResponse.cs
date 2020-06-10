@@ -16,7 +16,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string MerchantPid { get; set; }
 
         /// <summary>
-        /// 产品签约状态对象
+        /// product签约状态对象
         /// </summary>
         [JsonPropertyName("sign_status_list")]
         public List<ProductInviteStatusInfo> SignStatusList { get; set; }

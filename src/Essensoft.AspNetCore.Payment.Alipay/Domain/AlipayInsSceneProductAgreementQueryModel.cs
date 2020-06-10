@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string EndEffectTime { get; set; }
 
         /// <summary>
-        /// 产品机构编码
+        /// product机构编码
         /// </summary>
         [JsonPropertyName("item_id")]
         public string ItemId { get; set; }

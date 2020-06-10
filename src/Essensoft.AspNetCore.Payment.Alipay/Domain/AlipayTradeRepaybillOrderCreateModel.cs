@@ -38,7 +38,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string RepayPayeeName { get; set; }
 
         /// <summary>
-        /// 还款的收单产品码，支付宝定义
+        /// 还款的收单product码，支付宝定义
         /// </summary>
         [JsonPropertyName("repay_product_code")]
         public string RepayProductCode { get; set; }

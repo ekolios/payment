@@ -170,7 +170,7 @@ namespace Essensoft.AspNetCore.Payment.WeChatPay.Notify
         public List<CouponInfo> CouponInfos { get; set; }
 
         /// <summary>
-        /// 微信支付订单号
+        /// WeChat Pay订单号
         /// </summary>
         [XmlElement("transaction_id")]
         public string TransactionId { get; set; }

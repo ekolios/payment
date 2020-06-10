@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string EndTime { get; set; }
 
         /// <summary>
-        /// 赠险的产品组标识，例如免费医疗金的COMMON_GIFT_INSURANCE_PRODUCT_GROUP
+        /// 赠险的product组标识，例如免费医疗金的COMMON_GIFT_INSURANCE_PRODUCT_GROUP
         /// </summary>
         [JsonPropertyName("product_group_biz_type")]
         public string ProductGroupBizType { get; set; }

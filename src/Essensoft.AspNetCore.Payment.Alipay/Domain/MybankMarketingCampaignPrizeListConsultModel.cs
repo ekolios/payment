@@ -50,7 +50,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string IpRoleId { get; set; }
 
         /// <summary>
-        /// 业务产品码
+        /// 业务product码
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

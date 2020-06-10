@@ -20,13 +20,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ExpiryTime { get; set; }
 
         /// <summary>
-        /// 信用借还订单号,该订单号在订单创建时由信用借还产品产生,并通过订单创建接口的返回结果返回给调用者
+        /// 信用借还订单号,该订单号在订单创建时由信用借还product产生,并通过订单创建接口的返回结果返回给调用者
         /// </summary>
         [JsonPropertyName("order_no")]
         public string OrderNo { get; set; }
 
         /// <summary>
-        /// 信用借还的产品码,是固定值:w1010100000000002858
+        /// 信用借还的product码,是固定值:w1010100000000002858
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

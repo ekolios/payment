@@ -26,19 +26,19 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Channel { get; set; }
 
         /// <summary>
-        /// 商户产品签约失效时间，格式为： yyyy-MM-dd hh:mm:ss
+        /// 商户product签约失效时间，格式为： yyyy-MM-dd hh:mm:ss
         /// </summary>
         [JsonPropertyName("effect_end_time")]
         public string EffectEndTime { get; set; }
 
         /// <summary>
-        /// 商户产品签约生效起始时间，格式为yyyy-MM-dd hh:mm:ss
+        /// 商户product签约生效起始时间，格式为yyyy-MM-dd hh:mm:ss
         /// </summary>
         [JsonPropertyName("effect_start_time")]
         public string EffectStartTime { get; set; }
 
         /// <summary>
-        /// 产品的机构code
+        /// product的机构code
         /// </summary>
         [JsonPropertyName("item_id")]
         public string ItemId { get; set; }

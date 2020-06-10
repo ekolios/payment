@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class InsTradeInfo : AlipayObject
     {
         /// <summary>
-        /// 产品编码  交强险-01010000002000000251,   商业险-01010000002000000250
+        /// product编码  交强险-01010000002000000251,   商业险-01010000002000000250
         /// </summary>
         [JsonPropertyName("product_no")]
         public string ProductNo { get; set; }

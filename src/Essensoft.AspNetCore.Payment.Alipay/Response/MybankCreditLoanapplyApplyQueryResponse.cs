@@ -88,13 +88,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string LoanType { get; set; }
 
         /// <summary>
-        /// 运营产品CODE
+        /// 运营productCODE
         /// </summary>
         [JsonPropertyName("op_prod_code")]
         public string OpProdCode { get; set; }
 
         /// <summary>
-        /// 运营产品CODE版本
+        /// 运营productCODE版本
         /// </summary>
         [JsonPropertyName("op_prod_code_version")]
         public string OpProdCodeVersion { get; set; }

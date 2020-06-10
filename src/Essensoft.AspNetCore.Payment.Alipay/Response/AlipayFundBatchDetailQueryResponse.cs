@@ -118,13 +118,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string PaymentCurrency { get; set; }
 
         /// <summary>
-        /// 业务产品码。不同产品值不同，具体值联系支付宝确认。
+        /// 业务product码。不同product值不同，具体值联系支付宝确认。
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }
 
         /// <summary>
-        /// 签约了批量代发产品的支付宝账号。（注：境外代发场景加会返回）
+        /// 签约了批量代发product的支付宝账号。（注：境外代发场景加会返回）
         /// </summary>
         [JsonPropertyName("sign_principal")]
         public string SignPrincipal { get; set; }

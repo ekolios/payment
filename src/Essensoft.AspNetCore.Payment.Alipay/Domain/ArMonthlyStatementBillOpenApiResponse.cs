@@ -225,7 +225,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Memo { get; set; }
 
         /// <summary>
-        /// 元数据来源标识，包括(用户、商户、产品、合约、计费)来源
+        /// 元数据来源标识，包括(用户、商户、product、合约、计费)来源
         /// </summary>
         [JsonPropertyName("metadata_source")]
         public string MetadataSource { get; set; }
@@ -297,13 +297,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PricePolicyId { get; set; }
 
         /// <summary>
-        /// 产品码，金融云为商品ID
+        /// product码，金融云为商品ID
         /// </summary>
         [JsonPropertyName("prod_code")]
         public string ProdCode { get; set; }
 
         /// <summary>
-        /// 产品名称，金融云为空，需要自己查询
+        /// product名称，金融云为空，需要自己查询
         /// </summary>
         [JsonPropertyName("product_name")]
         public string ProductName { get; set; }

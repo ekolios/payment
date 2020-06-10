@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Channel { get; set; }
 
         /// <summary>
-        /// 产品协议号
+        /// product协议号
         /// </summary>
         [JsonPropertyName("product_sign_no")]
         public string ProductSignNo { get; set; }

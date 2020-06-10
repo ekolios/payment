@@ -116,43 +116,43 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ModerType { get; set; }
 
         /// <summary>
-        /// 签约产品外标
+        /// 签约product外标
         /// </summary>
         [JsonPropertyName("pd_mark")]
         public string PdMark { get; set; }
 
         /// <summary>
-        /// 产品编码
+        /// product编码
         /// </summary>
         [JsonPropertyName("prod_code")]
         public string ProdCode { get; set; }
 
         /// <summary>
-        /// 产品名称
+        /// product名称
         /// </summary>
         [JsonPropertyName("prod_name")]
         public string ProdName { get; set; }
 
         /// <summary>
-        /// 产品版本
+        /// product版本
         /// </summary>
         [JsonPropertyName("prod_version")]
         public string ProdVersion { get; set; }
 
         /// <summary>
-        /// ps(产品销售)编码
+        /// ps(product销售)编码
         /// </summary>
         [JsonPropertyName("ps_code")]
         public string PsCode { get; set; }
 
         /// <summary>
-        /// ps(产品销售)id
+        /// ps(product销售)id
         /// </summary>
         [JsonPropertyName("ps_id")]
         public string PsId { get; set; }
 
         /// <summary>
-        /// 产品销售名称
+        /// product销售名称
         /// </summary>
         [JsonPropertyName("ps_name")]
         public string PsName { get; set; }
@@ -164,13 +164,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Status { get; set; }
 
         /// <summary>
-        /// 签约模板产品编码
+        /// 签约模板product编码
         /// </summary>
         [JsonPropertyName("template_prod_code")]
         public string TemplateProdCode { get; set; }
 
         /// <summary>
-        /// 签约模板产品版本
+        /// 签约模板product版本
         /// </summary>
         [JsonPropertyName("template_prod_version")]
         public string TemplateProdVersion { get; set; }

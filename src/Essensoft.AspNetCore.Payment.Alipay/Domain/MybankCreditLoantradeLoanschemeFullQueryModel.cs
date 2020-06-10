@@ -51,7 +51,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string IpRoleId { get; set; }
 
         /// <summary>
-        /// 网商银行在对客户授信时，使用的政策产品唯一标识码，由网商银行内部生成，长度8位，字母和数字组成，示例值：BC32001C
+        /// 网商银行在对客户授信时，使用的政策product唯一标识码，由网商银行内部生成，长度8位，字母和数字组成，示例值：BC32001C
         /// </summary>
         [JsonPropertyName("loan_policy_code")]
         public string LoanPolicyCode { get; set; }
@@ -81,7 +81,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string RepayMode { get; set; }
 
         /// <summary>
-        /// 销售产品码，一个信贷产品对外销售时的唯一标识，由网商银行内部分配，长度20位的一串数字，示例值：01021000100000000169
+        /// 销售product码，一个信贷product对外销售时的唯一标识，由网商银行内部分配，长度20位的一串数字，示例值：01021000100000000169
         /// </summary>
         [JsonPropertyName("sale_pd_code")]
         public string SalePdCode { get; set; }

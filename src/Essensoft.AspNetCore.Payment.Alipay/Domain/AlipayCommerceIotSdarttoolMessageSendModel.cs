@@ -26,7 +26,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public bool ImmediateMsg { get; set; }
 
         /// <summary>
-        /// 产品ID
+        /// productID
         /// </summary>
         [JsonPropertyName("item_id")]
         public string ItemId { get; set; }

@@ -51,7 +51,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string EndEnable { get; set; }
 
         /// <summary>
-        /// 业务拓展字段 目前支持下面字段 已签约分账产品用户 royalty_amount 分账金额，分账收入户PID trans_in_pid
+        /// 业务拓展字段 目前支持下面字段 已签约分账product用户 royalty_amount 分账金额，分账收入户PID trans_in_pid
         /// </summary>
         [JsonPropertyName("ext_info")]
         public BillSendExtInfo ExtInfo { get; set; }

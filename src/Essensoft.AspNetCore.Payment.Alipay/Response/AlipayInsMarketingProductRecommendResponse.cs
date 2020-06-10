@@ -10,7 +10,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
     public class AlipayInsMarketingProductRecommendResponse : AlipayResponse
     {
         /// <summary>
-        /// 产品列表
+        /// product列表
         /// </summary>
         [JsonPropertyName("products")]
         public List<RecomProduct> Products { get; set; }

@@ -74,7 +74,7 @@ namespace Essensoft.AspNetCore.Payment.WeChatPay
 
         /// <summary>
         /// RSA公钥
-        /// 目前仅调用"企业付款到银行卡API"时使用，执行"获取RSA加密公钥API"即可获取。
+        /// 目前仅调用"企业付款到银行卡API"时使用，执行"Obtain RSA encrypted public keyAPI"即可获取。
         /// </summary>
         public string RsaPublicKey { get; set; }
     }

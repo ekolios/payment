@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
     public class KoubeiShopMallPageQueryResponse : AlipayResponse
     {
         /// <summary>
-        /// 商圈首页url地址
+        /// 商圈Homeurl地址
         /// </summary>
         [JsonPropertyName("mall_url")]
         public string MallUrl { get; set; }

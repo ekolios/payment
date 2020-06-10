@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BuckleMerchantId { get; set; }
 
         /// <summary>
-        /// 商户签约号，代扣协议中标示用户的唯一签约号（确保在商户系统中唯一）。  格式规则：支持大写小写字母和数字，最长32位。  商户系统按需传入，如果同一用户在同一产品码、同一签约场景下，签订了多份代扣协议，那么需要指定并传入该值。
+        /// 商户签约号，代扣协议中标示用户的唯一签约号（确保在商户系统中唯一）。  格式规则：支持大写小写字母和数字，最长32位。  商户系统按需传入，如果同一用户在同一product码、同一签约场景下，签订了多份代扣协议，那么需要指定并传入该值。
         /// </summary>
         [JsonPropertyName("external_agreement_no")]
         public string ExternalAgreementNo { get; set; }
@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ExternalLogonId { get; set; }
 
         /// <summary>
-        /// 个人签约产品码，商户和支付宝签约时确定。
+        /// 个人签约product码，商户和支付宝签约时确定。
         /// </summary>
         [JsonPropertyName("personal_product_code")]
         public string PersonalProductCode { get; set; }

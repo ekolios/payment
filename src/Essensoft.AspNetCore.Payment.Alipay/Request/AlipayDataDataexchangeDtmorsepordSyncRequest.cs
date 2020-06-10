@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class AlipayDataDataexchangeDtmorsepordSyncRequest : IAlipayRequest<AlipayDataDataexchangeDtmorsepordSyncResponse>
     {
         /// <summary>
-        /// 摩斯产品数据反馈接口
+        /// 摩斯product数据反馈接口
         /// </summary>
         public string BizContent { get; set; }
 

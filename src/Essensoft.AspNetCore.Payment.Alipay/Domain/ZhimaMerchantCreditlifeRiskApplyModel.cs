@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string CertNo { get; set; }
 
         /// <summary>
-        /// 接入信用套餐所分配的产品码
+        /// 接入信用套餐所分配的product码
         /// </summary>
         [JsonPropertyName("item_id")]
         public string ItemId { get; set; }

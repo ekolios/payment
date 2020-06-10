@@ -15,7 +15,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BillAmount { get; set; }
 
         /// <summary>
-        /// 账单产品类型，标识业务用，具体值支付宝根据业务接入场景进行分配。
+        /// 账单product类型，标识业务用，具体值支付宝根据业务接入场景进行分配。
         /// </summary>
         [JsonPropertyName("bill_product")]
         public string BillProduct { get; set; }

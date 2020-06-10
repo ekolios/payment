@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class AlipayFundTransTrusteeshipAccountCreateModel : AlipayObject
     {
         /// <summary>
-        /// 开户产品码，开户的具体业务类型
+        /// 开户product码，开户的具体业务类型
         /// </summary>
         [JsonPropertyName("account_product_code")]
         public string AccountProductCode { get; set; }

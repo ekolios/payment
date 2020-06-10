@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
     public class AlipayOpenAgentCreateResponse : AlipayResponse
     {
         /// <summary>
-        /// 本次代商户操作的全局唯一事务编号，后续代商户创建小程序、代签约当面付等产品、提交事务等接口都需要传递该batch_no值，且要确认只有 init 状态的batch_no才能发起调用。
+        /// 本次代商户操作的全局唯一事务编号，后续代商户创建小程序、代签约当面付等product、提交事务等接口都需要传递该batch_no值，且要确认只有 init 状态的batch_no才能发起调用。
         /// </summary>
         [JsonPropertyName("batch_no")]
         public string BatchNo { get; set; }

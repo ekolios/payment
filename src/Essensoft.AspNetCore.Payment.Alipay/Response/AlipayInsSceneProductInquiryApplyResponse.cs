@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
     public class AlipayInsSceneProductInquiryApplyResponse : AlipayResponse
     {
         /// <summary>
-        /// 保险产品保费值，金额类型(单位为分)
+        /// 保险product保费值，金额类型(单位为分)
         /// </summary>
         [JsonPropertyName("premium")]
         public long Premium { get; set; }

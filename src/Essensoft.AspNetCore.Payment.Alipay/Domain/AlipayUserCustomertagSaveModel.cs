@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class AlipayUserCustomertagSaveModel : AlipayObject
     {
         /// <summary>
-        /// 业务场景码。由支付宝产品经理分配，相当于存储标签的使用凭证。
+        /// 业务场景码。由支付宝product经理分配，相当于存储标签的使用凭证。
         /// </summary>
         [JsonPropertyName("biz_type")]
         public string BizType { get; set; }

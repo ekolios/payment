@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class MybankCreditLoanapplyArrangementQueryModel : AlipayObject
     {
         /// <summary>
-        /// 产品代码，标识网商银行具体的产品，由网商银行预先分配好，接入方按网商银行的要求送。
+        /// product代码，标识网商银行具体的product，由网商银行预先分配好，接入方按网商银行的要求送。
         /// </summary>
         [JsonPropertyName("ar_pd_code")]
         public string ArPdCode { get; set; }
@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string IpId { get; set; }
 
         /// <summary>
-        /// 客户角色id，网商银行唯一标识一个客户角色的id。此id是通过客户创建接口返回的。即调用此接口前必须先调用客户创建接口。客户角色id+产品代码唯一确定一笔签约。
+        /// 客户角色id，网商银行唯一标识一个客户角色的id。此id是通过客户创建接口返回的。即调用此接口前必须先调用客户创建接口。客户角色id+product代码唯一确定一笔签约。
         /// </summary>
         [JsonPropertyName("ip_role_id")]
         public string IpRoleId { get; set; }

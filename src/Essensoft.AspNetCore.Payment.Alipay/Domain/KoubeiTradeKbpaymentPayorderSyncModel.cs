@@ -45,7 +45,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string GmtFinish { get; set; }
 
         /// <summary>
-        /// 第三方支付单据号，比如在微信支付场景下，为微信支付订单号
+        /// 第三方支付单据号，比如在WeChat Pay场景下，为WeChat Pay订单号
         /// </summary>
         [JsonPropertyName("out_pay_id")]
         public string OutPayId { get; set; }

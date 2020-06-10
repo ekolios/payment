@@ -38,7 +38,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OutRefundNo { get; set; }
 
         /// <summary>
-        /// 签约产品码
+        /// 签约product码
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

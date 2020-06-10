@@ -21,7 +21,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Amount { get; set; }
 
         /// <summary>
-        /// "可枚举的业务产品类型  (1)KB_ORDER_DISHES 立即就餐  (2) KB_RESERVATION 预约点餐"
+        /// "可枚举的业务product类型  (1)KB_ORDER_DISHES 立即就餐  (2) KB_RESERVATION 预约点餐"
         /// </summary>
         [JsonPropertyName("biz_product")]
         public string BizProduct { get; set; }

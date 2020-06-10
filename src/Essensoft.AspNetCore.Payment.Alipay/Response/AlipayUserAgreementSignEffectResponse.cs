@@ -44,7 +44,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string InvalidTime { get; set; }
 
         /// <summary>
-        /// 协议产品码，商户和支付宝签约时确定，不同业务场景对应不同的签约产品码。
+        /// 协议product码，商户和支付宝签约时确定，不同业务场景对应不同的签约product码。
         /// </summary>
         [JsonPropertyName("personal_product_code")]
         public string PersonalProductCode { get; set; }

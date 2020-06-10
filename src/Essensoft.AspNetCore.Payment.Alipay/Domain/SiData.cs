@@ -50,7 +50,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string TargetSicardNo { get; set; }
 
         /// <summary>
-        /// 支付宝用户ID,可以通过获取会员信息产品 获取支付宝用户ID  证件信息和userid同时存在以userid为主  target_user_id>target_idcard
+        /// 支付宝用户ID,可以通过获取会员信息product 获取支付宝用户ID  证件信息和userid同时存在以userid为主  target_user_id>target_idcard
         /// </summary>
         [JsonPropertyName("target_user_id")]
         public string TargetUserId { get; set; }

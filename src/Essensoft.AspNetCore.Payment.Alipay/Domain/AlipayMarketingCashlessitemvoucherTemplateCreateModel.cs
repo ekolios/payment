@@ -33,7 +33,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string FloorAmount { get; set; }
 
         /// <summary>
-        /// 所有商品最多可享折扣数量。 当用户购买多件时，最多可以对几件特价支付。假设券类型为无资金单品特价券(ITEM_CASHLESS_SPE_VOUCHER)，商品编码填写A、B，此参数传入2，则订单中不管是A或者B，一共只能优惠2件，第3件以上原价。必须是整数，最低数量为1，最高99。券类型为无资金单品折扣券(ITEM_CASHLESS_DISCOUNT_VOUCHER)和无资金单品特价券(ITEM_CASHLESS_SPE_VOUCHER)时必填，无资金单品代金券下此值必须为0。 特别注意：此字段折扣数量的计算方式，相对老版本版本发生了变化。老版本的计算方式如下： 同样假设券类型为无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER），商品编码填写A、B，此参数传入3，则订单中A、B两个单品分别最多3件特价X元，第4件以上原价。必须是整数，最低数量为1，最高99。 voucher_type为无资金单品折扣券（ITEM_CASHLESS_DISCOUNT_VOUCHER）和无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER）时必填，无资金单品代金券下此值必须为0。可以直接通过产品文档说明中的API的版本信息或者创建券模板返回结果中的的最大优惠字段（voucher_discount_limit）来确认具体使用的哪种折扣方式。
+        /// 所有商品最多可享折扣数量。 当用户购买多件时，最多可以对几件特价支付。假设券类型为无资金单品特价券(ITEM_CASHLESS_SPE_VOUCHER)，商品编码填写A、B，此参数传入2，则订单中不管是A或者B，一共只能优惠2件，第3件以上原价。必须是整数，最低数量为1，最高99。券类型为无资金单品折扣券(ITEM_CASHLESS_DISCOUNT_VOUCHER)和无资金单品特价券(ITEM_CASHLESS_SPE_VOUCHER)时必填，无资金单品代金券下此值必须为0。 特别注意：此字段折扣数量的计算方式，相对老版本版本发生了变化。老版本的计算方式如下： 同样假设券类型为无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER），商品编码填写A、B，此参数传入3，则订单中A、B两个单品分别最多3件特价X元，第4件以上原价。必须是整数，最低数量为1，最高99。 voucher_type为无资金单品折扣券（ITEM_CASHLESS_DISCOUNT_VOUCHER）和无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER）时必填，无资金单品代金券下此值必须为0。可以直接通过product文档说明中的API的版本信息或者创建券模板返回结果中的的最大优惠字段（voucher_discount_limit）来确认具体使用的哪种折扣方式。
         /// </summary>
         [JsonPropertyName("goods_ceiling_quantity")]
         public string GoodsCeilingQuantity { get; set; }
@@ -69,7 +69,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string GoodsName { get; set; }
 
         /// <summary>
-        /// 商品原价。 当voucher_type为无资金单品折扣券（ITEM_CASHLESS_DISCOUNT_VOUCHER）和无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER）时必选，无资金单品代金券（ITEM_CASHLESS_FIX_VOUCHER）类型下此值必须为空。用于计算最大优惠价格（最大优惠价格的计算方式请参考产品说明文档）。
+        /// 商品原价。 当voucher_type为无资金单品折扣券（ITEM_CASHLESS_DISCOUNT_VOUCHER）和无资金单品特价券（ITEM_CASHLESS_SPE_VOUCHER）时必选，无资金单品代金券（ITEM_CASHLESS_FIX_VOUCHER）类型下此值必须为空。用于计算最大优惠价格（最大优惠价格的计算方式请参考product说明文档）。
         /// </summary>
         [JsonPropertyName("goods_origin_price")]
         public string GoodsOriginPrice { get; set; }

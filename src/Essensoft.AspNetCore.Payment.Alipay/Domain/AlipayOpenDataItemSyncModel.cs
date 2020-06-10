@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class AlipayOpenDataItemSyncModel : AlipayObject
     {
         /// <summary>
-        /// 变更事件类型  枚举值  1 展台信息变更  2 首页投放状态变更
+        /// 变更事件类型  枚举值  1 展台信息变更  2 Home投放状态变更
         /// </summary>
         [JsonPropertyName("event_type")]
         public string EventType { get; set; }

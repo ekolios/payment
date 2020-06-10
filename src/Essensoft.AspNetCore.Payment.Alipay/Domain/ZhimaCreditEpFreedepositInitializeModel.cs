@@ -86,7 +86,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OutRequestNo { get; set; }
 
         /// <summary>
-        /// 企业免押额度申请产品码
+        /// 企业免押额度申请product码
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

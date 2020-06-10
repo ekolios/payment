@@ -15,31 +15,31 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public List<string> ArStatuses { get; set; }
 
         /// <summary>
-        /// 产品外标类型:01：机构产品 02：借款人信息 03：主站产品 04： 标准机构产品  05：内部业务平台标准产品
+        /// product外标类型:01：机构product 02：借款人信息 03：主站product 04： 标准机构product  05：内部业务平台标准product
         /// </summary>
         [JsonPropertyName("mark_type")]
         public string MarkType { get; set; }
 
         /// <summary>
-        /// 产品编码列表
+        /// product编码列表
         /// </summary>
         [JsonPropertyName("pd_codes")]
         public List<string> PdCodes { get; set; }
 
         /// <summary>
-        /// 产品外标列表
+        /// product外标列表
         /// </summary>
         [JsonPropertyName("pd_marks")]
         public List<string> PdMarks { get; set; }
 
         /// <summary>
-        /// 是否查询出产品外标
+        /// 是否查询出product外标
         /// </summary>
         [JsonPropertyName("select_pd_mark")]
         public bool SelectPdMark { get; set; }
 
         /// <summary>
-        /// 是否查询出产品名称
+        /// 是否查询出product名称
         /// </summary>
         [JsonPropertyName("select_pd_name")]
         public bool SelectPdName { get; set; }

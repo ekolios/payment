@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string EndTime { get; set; }
 
         /// <summary>
-        /// product_id：产品id，可以咨询蚂蚁这边的同学给出需要查询的产品id，查询订单只能按照产品纬度来查
+        /// product_id：productid，可以咨询蚂蚁这边的同学给出需要查询的productid，查询订单只能按照product纬度来查
         /// </summary>
         [JsonPropertyName("product_id")]
         public string ProductId { get; set; }

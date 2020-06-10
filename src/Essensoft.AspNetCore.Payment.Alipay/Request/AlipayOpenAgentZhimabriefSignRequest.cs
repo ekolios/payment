@@ -97,7 +97,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
         public FileItem SpecialLicensePic { get; set; }
 
         /// <summary>
-        /// 使用场景描述，签约芝麻信用产品的用途，可选值："现金放贷","其他", "消费分期（例如买房、装修等）", "融资租赁", "发放信用卡", "极速返利", "押金减免", "先用后付", "社交场景信用互查", "会员分层信用参考"
+        /// 使用场景描述，签约芝麻信用product的用途，可选值："现金放贷","其他", "消费分期（例如买房、装修等）", "融资租赁", "发放信用卡", "极速返利", "押金减免", "先用后付", "社交场景信用互查", "会员分层信用参考"
         /// </summary>
         public List<string> UsageScene { get; set; }
 

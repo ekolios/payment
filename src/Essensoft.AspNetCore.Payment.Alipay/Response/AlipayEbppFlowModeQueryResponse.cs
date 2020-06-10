@@ -26,7 +26,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string Mobile { get; set; }
 
         /// <summary>
-        /// 流量产品编码
+        /// 流量product编码
         /// </summary>
         [JsonPropertyName("product_id")]
         public string ProductId { get; set; }

@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string ExtMsg { get; set; }
 
         /// <summary>
-        /// 移动兑换流量产品码
+        /// 移动兑换流量product码
         /// </summary>
         [JsonPropertyName("trade_code")]
         public string TradeCode { get; set; }

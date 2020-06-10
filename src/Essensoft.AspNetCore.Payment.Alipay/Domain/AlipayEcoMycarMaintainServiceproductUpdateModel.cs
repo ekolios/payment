@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OperationType { get; set; }
 
         /// <summary>
-        /// 外部服务商品标示，ISV保证唯一性。ISV同一门店同一服务项同一产品名称，只能配置一个商品。（存在同一服务项类目对应多个产品情况，5座普通洗车、5座SUV洗车）
+        /// 外部服务商品标示，ISV保证唯一性。ISV同一门店同一服务项同一product名称，只能配置一个商品。（存在同一服务项类目对应多个product情况，5座普通洗车、5座SUV洗车）
         /// </summary>
         [JsonPropertyName("out_product_id")]
         public string OutProductId { get; set; }

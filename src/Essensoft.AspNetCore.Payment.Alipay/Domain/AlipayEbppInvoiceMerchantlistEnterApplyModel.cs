@@ -15,7 +15,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public MerchantBaseEnterOpenModel MerchantBase { get; set; }
 
         /// <summary>
-        /// 商户门店入驻产品公共信息
+        /// 商户门店入驻product公共信息
         /// </summary>
         [JsonPropertyName("sub_merchant_common_info")]
         public SubMerchantCommonEnterOpenModel SubMerchantCommonInfo { get; set; }

@@ -9,7 +9,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
     public class AlipayEcoMycarMaintainOrderCreateRequest : IAlipayRequest<AlipayEcoMycarMaintainOrderCreateResponse>
     {
         /// <summary>
-        /// 门店产品通知接口
+        /// 门店product通知接口
         /// </summary>
         public string BizContent { get; set; }
 

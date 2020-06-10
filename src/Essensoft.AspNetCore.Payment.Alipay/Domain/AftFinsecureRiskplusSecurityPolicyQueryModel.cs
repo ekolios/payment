@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public EventInfo EventInfo { get; set; }
 
         /// <summary>
-        /// 产品集群ID，默认填写示例值
+        /// product集群ID，默认填写示例值
         /// </summary>
         [JsonPropertyName("product_instance_id")]
         public string ProductInstanceId { get; set; }

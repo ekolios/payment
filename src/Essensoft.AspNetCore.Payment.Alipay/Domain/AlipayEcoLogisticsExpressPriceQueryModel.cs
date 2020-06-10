@@ -26,7 +26,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string LogisMerchCode { get; set; }
 
         /// <summary>
-        /// 产品类型编码，取值如下：  STANDARD：标准快递。这是寄件平台默认支持的产品分类，如有其他产品分类的支持需求，可以发送邮件至xxx@alipay.com联系。
+        /// product类型编码，取值如下：  STANDARD：标准快递。这是寄件平台默认支持的product分类，如有其他product分类的支持需求，可以发送邮件至xxx@alipay.com联系。
         /// </summary>
         [JsonPropertyName("product_type_code")]
         public string ProductTypeCode { get; set; }

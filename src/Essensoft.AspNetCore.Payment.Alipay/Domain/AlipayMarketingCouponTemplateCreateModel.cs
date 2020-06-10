@@ -62,7 +62,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string RedirectUri { get; set; }
 
         /// <summary>
-        /// 规则配置，JSON字符串，格式为K-V模式，当同一个KEY下规则为多个值时，用英文逗号进行分隔。目前支持的规则KEY有：核销商户ID(PID),核销内部门店ID(STORE),指定收款账户(payeeUserId),子产品交易码(bizProduct),缴费机构/类型(CUSTOMBUSINESS),缴费户号(EBPPUSERNUM)。一旦商户设置了规则，当前红包实例必须满足指定规则才能进行核销。
+        /// 规则配置，JSON字符串，格式为K-V模式，当同一个KEY下规则为多个值时，用英文逗号进行分隔。目前支持的规则KEY有：核销商户ID(PID),核销内部门店ID(STORE),指定收款账户(payeeUserId),子product交易码(bizProduct),缴费机构/类型(CUSTOMBUSINESS),缴费户号(EBPPUSERNUM)。一旦商户设置了规则，当前红包实例必须满足指定规则才能进行核销。
         /// </summary>
         [JsonPropertyName("rule_conf")]
         public string RuleConf { get; set; }
@@ -86,7 +86,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string VoucherType { get; set; }
 
         /// <summary>
-        /// 红包使用场景。可枚举，目前支持“支付宝通用全场红包”(ALIPAY_COUPON_ALL) ，该场景设置后，使用规则字段允许为空，只要支付宝支付产品支持核销此类型的红包，用户红包就可以核销。“花呗还款红包”(HUABEI_COUPON_REPAYMENT) ，该场景设置后，会自动填充花呗还款对应的规则，无需填入rule_conf，代表仅花呗还款场景可以核销此红包。“支付宝普通红包”(ALIPAY_COUPON_COMMON) 该场景下必须设置一条规则rule_conf。场景值会关联当前红包的展示模板，默认描述等信息。
+        /// 红包使用场景。可枚举，目前支持“支付宝通用全场红包”(ALIPAY_COUPON_ALL) ，该场景设置后，使用规则字段允许为空，只要支付宝支付product支持核销此类型的红包，用户红包就可以核销。“花呗还款红包”(HUABEI_COUPON_REPAYMENT) ，该场景设置后，会自动填充花呗还款对应的规则，无需填入rule_conf，代表仅花呗还款场景可以核销此红包。“支付宝普通红包”(ALIPAY_COUPON_COMMON) 该场景下必须设置一条规则rule_conf。场景值会关联当前红包的展示模板，默认描述等信息。
         /// </summary>
         [JsonPropertyName("voucher_use_scene")]
         public string VoucherUseScene { get; set; }

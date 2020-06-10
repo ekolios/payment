@@ -33,7 +33,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string InstId { get; set; }
 
         /// <summary>
-        /// 产品编码列表，蚂蚁保险平台会为每个产品分配一个唯一的产品编码
+        /// product编码列表，蚂蚁保险平台会为每个product分配一个唯一的product编码
         /// </summary>
         [JsonPropertyName("prod_code_list")]
         public List<string> ProdCodeList { get; set; }
@@ -45,7 +45,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string RegionId { get; set; }
 
         /// <summary>
-        /// 专区名称，会作为机构保险号首页的专区名称做展示
+        /// 专区名称，会作为机构保险号Home的专区名称做展示
         /// </summary>
         [JsonPropertyName("region_name")]
         public string RegionName { get; set; }

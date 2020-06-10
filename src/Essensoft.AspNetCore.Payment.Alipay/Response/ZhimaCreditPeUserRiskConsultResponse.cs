@@ -26,7 +26,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string RiskOrderNo { get; set; }
 
         /// <summary>
-        /// 场景分等级，如有需要，请在产品签约阶段联系产品或业务负责人申请
+        /// 场景分等级，如有需要，请在product签约阶段联系product或业务负责人申请
         /// </summary>
         [JsonPropertyName("scene_level")]
         public string SceneLevel { get; set; }

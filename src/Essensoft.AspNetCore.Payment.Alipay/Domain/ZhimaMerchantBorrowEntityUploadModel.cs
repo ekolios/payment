@@ -74,7 +74,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string OfficeHoursDesc { get; set; }
 
         /// <summary>
-        /// 信用借还的签约产品码,传入固定值:w1010100000000002858
+        /// 信用借还的签约product码,传入固定值:w1010100000000002858
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

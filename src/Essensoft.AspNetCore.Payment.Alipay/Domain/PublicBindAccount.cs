@@ -26,7 +26,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BindAccountNo { get; set; }
 
         /// <summary>
-        /// 公众账号期望支付宝用户在公众账号首页看到的关于该用户的显示信息，最长10个汉字。
+        /// 公众账号期望支付宝用户在公众账号Home看到的关于该用户的显示信息，最长10个汉字。
         /// </summary>
         [JsonPropertyName("display_name")]
         public string DisplayName { get; set; }

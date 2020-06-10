@@ -194,7 +194,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string RateSourceCode { get; set; }
 
         /// <summary>
-        /// 产品类型：即期，远期，掉期
+        /// product类型：即期，远期，掉期
         /// </summary>
         [JsonPropertyName("rate_type")]
         public string RateType { get; set; }

@@ -34,7 +34,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
         public string ChargeInst { get; set; }
 
         /// <summary>
-        /// 代扣产品码, 由技术同学分配。 目前在缴费业务场景中，传入INST_DIRECT_DEDUCT; 在保险业务场景中, 传入INSURANCE_MERCHANT_DEDUCT
+        /// 代扣product码, 由技术同学分配。 目前在缴费业务场景中，传入INST_DIRECT_DEDUCT; 在保险业务场景中, 传入INSURANCE_MERCHANT_DEDUCT
         /// </summary>
         public string DeductProdCode { get; set; }
 

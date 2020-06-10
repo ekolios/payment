@@ -51,7 +51,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string CompanyServicePhone { get; set; }
 
         /// <summary>
-        /// 产品销售单元
+        /// product销售单元
         /// </summary>
         [JsonPropertyName("csu_no")]
         public string CsuNo { get; set; }
@@ -63,7 +63,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public long MaxQuan { get; set; }
 
         /// <summary>
-        /// 推荐产品展示名称
+        /// 推荐product展示名称
         /// </summary>
         [JsonPropertyName("name")]
         public string Name { get; set; }
@@ -81,19 +81,19 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public long Premium { get; set; }
 
         /// <summary>
-        /// 推荐产品ID
+        /// 推荐productID
         /// </summary>
         [JsonPropertyName("prod_no")]
         public string ProdNo { get; set; }
 
         /// <summary>
-        /// 产品资源项列表，可以平行扩展多个资源项
+        /// product资源项列表，可以平行扩展多个资源项
         /// </summary>
         [JsonPropertyName("resource_list")]
         public List<ProdResource> ResourceList { get; set; }
 
         /// <summary>
-        /// 产品资源项列表
+        /// product资源项列表
         /// </summary>
         [JsonPropertyName("resources")]
         public ProdResource Resources { get; set; }
@@ -111,7 +111,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public long SumInsured { get; set; }
 
         /// <summary>
-        /// 推荐返回结果对象：1：保险产品，2：保险权益
+        /// 推荐返回结果对象：1：保险product，2：保险权益
         /// </summary>
         [JsonPropertyName("type")]
         public string Type { get; set; }

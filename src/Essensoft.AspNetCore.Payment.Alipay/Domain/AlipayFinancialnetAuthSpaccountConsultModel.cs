@@ -14,7 +14,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BizIdentity { get; set; }
 
         /// <summary>
-        /// 签约产品ID
+        /// 签约productID
         /// </summary>
         [JsonPropertyName("sign_product_id")]
         public string SignProductId { get; set; }

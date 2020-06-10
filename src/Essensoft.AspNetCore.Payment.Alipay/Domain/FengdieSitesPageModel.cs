@@ -15,13 +15,13 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Alias { get; set; }
 
         /// <summary>
-        /// 是否为首页
+        /// 是否为Home
         /// </summary>
         [JsonPropertyName("is_home_page")]
         public bool IsHomePage { get; set; }
 
         /// <summary>
-        /// 首页原始 url，仅在 isHomePage = true 时候才存在
+        /// Home原始 url，仅在 isHomePage = true 时候才存在
         /// </summary>
         [JsonPropertyName("origin_url")]
         public string OriginUrl { get; set; }

@@ -19,12 +19,12 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
         public string FieldScene { get; set; }
 
         /// <summary>
-        /// 产品业务类型如缴费：JF
+        /// product业务类型如缴费：JF
         /// </summary>
         public string OrderType { get; set; }
 
         /// <summary>
-        /// 产品子业务类型如水费WATER
+        /// product子业务类型如水费WATER
         /// </summary>
         public string SubOrderType { get; set; }
 

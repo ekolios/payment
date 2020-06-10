@@ -69,7 +69,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public List<CmItemSkuInfo> SkuList { get; set; }
 
         /// <summary>
-        /// 商品所属标准类目ID（具体值请参见产品文档）
+        /// 商品所属标准类目ID（具体值请参见product文档）
         /// </summary>
         [JsonPropertyName("standard_category_id")]
         public string StandardCategoryId { get; set; }

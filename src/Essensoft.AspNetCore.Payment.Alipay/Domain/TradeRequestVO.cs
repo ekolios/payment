@@ -32,7 +32,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string BizEvCode { get; set; }
 
         /// <summary>
-        /// 业务产品码
+        /// 业务product码
         /// </summary>
         [JsonPropertyName("biz_pd_code")]
         public string BizPdCode { get; set; }
@@ -86,7 +86,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string CnlNo { get; set; }
 
         /// <summary>
-        /// 端到端传递的产品代码
+        /// 端到端传递的product代码
         /// </summary>
         [JsonPropertyName("cnl_pd_code")]
         public string CnlPdCode { get; set; }
@@ -176,7 +176,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PaymentType { get; set; }
 
         /// <summary>
-        /// 对客产品ID
+        /// 对客productID
         /// </summary>
         [JsonPropertyName("product_id")]
         public string ProductId { get; set; }

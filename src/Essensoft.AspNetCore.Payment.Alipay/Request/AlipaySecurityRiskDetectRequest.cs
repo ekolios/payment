@@ -139,12 +139,12 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
         public string EnvClientUuid { get; set; }
 
         /// <summary>
-        /// 订单产品数量，购买产品的数量（不可为小数）
+        /// 订单product数量，购买product的数量（不可为小数）
         /// </summary>
         public string ItemQuantity { get; set; }
 
         /// <summary>
-        /// 订单产品单价，取值范围为[0.01,100000000.00]，精确到小数点后两位。 curren...
+        /// 订单product单价，取值范围为[0.01,100000000.00]，精确到小数点后两位。 curren...
         /// </summary>
         public string ItemUnitPrice { get; set; }
 
@@ -174,7 +174,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Request
         public string OrderItemCity { get; set; }
 
         /// <summary>
-        /// 订单产品名称
+        /// 订单product名称
         /// </summary>
         public string OrderItemName { get; set; }
 

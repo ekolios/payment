@@ -68,7 +68,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string PayeeUserId { get; set; }
 
         /// <summary>
-        /// 销售产品码，后续新接入预授权当面付的业务，新当面预授权产品取值PRE_AUTH，境外预授权产品取值OVERSEAS_INSTORE_AUTH。
+        /// 销售product码，后续新接入预授权当面付的业务，新当面预授权product取值PRE_AUTH，境外预授权product取值OVERSEAS_INSTORE_AUTH。
         /// </summary>
         [JsonPropertyName("product_code")]
         public string ProductCode { get; set; }

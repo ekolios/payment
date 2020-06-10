@@ -20,7 +20,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string Hit { get; set; }
 
         /// <summary>
-        /// 欺诈关注清单的RiskCode列表，对应的描述见产品文档
+        /// 欺诈关注清单的RiskCode列表，对应的描述见product文档
         /// </summary>
         [JsonPropertyName("risk_code")]
         public string RiskCode { get; set; }

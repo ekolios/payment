@@ -26,7 +26,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Response
         public string TemplateId { get; set; }
 
         /// <summary>
-        /// 使用一张单品券用户可以获得的最大优惠。计算方式和单张券的最大优惠的上限请参考产品说明文档
+        /// 使用一张单品券用户可以获得的最大优惠。计算方式和单张券的最大优惠的上限请参考product说明文档
         /// </summary>
         [JsonPropertyName("voucher_discount_limit")]
         public string VoucherDiscountLimit { get; set; }

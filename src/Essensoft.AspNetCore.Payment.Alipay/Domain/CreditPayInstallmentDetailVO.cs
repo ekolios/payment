@@ -63,7 +63,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public CreditPayRepayVO RepayInfo { get; set; }
 
         /// <summary>
-        /// 分期产品码
+        /// 分期product码
         /// </summary>
         [JsonPropertyName("sale_pd_code")]
         public string SalePdCode { get; set; }

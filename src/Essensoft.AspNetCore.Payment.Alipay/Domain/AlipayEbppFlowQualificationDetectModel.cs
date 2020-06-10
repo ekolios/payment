@@ -15,7 +15,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
         public string Mobile { get; set; }
 
         /// <summary>
-        /// 需要校验的产品id
+        /// 需要校验的productid
         /// </summary>
         [JsonPropertyName("product_id")]
         public List<string> ProductId { get; set; }

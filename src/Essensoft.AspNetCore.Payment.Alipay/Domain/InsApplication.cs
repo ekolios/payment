@@ -8,7 +8,7 @@ namespace Essensoft.AspNetCore.Payment.Alipay.Domain
     public class InsApplication : AlipayObject
     {
         /// <summary>
-        /// 投保参数 ,每个产品特有的投保参数,如航空险的航班信息;标准json格式
+        /// 投保参数 ,每个product特有的投保参数,如航空险的航班信息;标准json格式
         /// </summary>
         [JsonPropertyName("biz_data")]
         public string BizData { get; set; }
